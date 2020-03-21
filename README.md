@@ -3,9 +3,7 @@
 Groupe 5
 
 
-Mattéo Ledoux
-
-Clément Douale
+Mattéo Ledoux \n Clément Douale
 
 Uriel Zuñiga
 
