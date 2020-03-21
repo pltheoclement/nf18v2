@@ -2,7 +2,7 @@
 
 Groupe 5
 
-Mattéo Ledoux
+Mattéo Ledoux;
 Clément Douale
 Uriel Zuñiga
 Steven Perez
