@@ -6,3 +6,4 @@ Groupe 5
 *  Clément Douale
 *  Uriel Zuñiga
 *  Steven Perez
+*  Pierre Tetard
