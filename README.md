@@ -1,4 +1,4 @@
-# Projet 1
+# Exercice Veto
 
 Groupe 5
 
