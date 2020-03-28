@@ -18,9 +18,9 @@ Le gestionnaire de la clinique veut pouvoir ajouter et mettre à jour la liste d
 
 <hr>
 
-<h2 align="center"> LIVRABLES <\h2>
+<h2 align="center"> LIVRABLES <\h2> <br>
 
-<font size=5>
+<font size=2>
 1.  Livrables v1 ()
 
 - README (avec les noms des membres du groupe)
