@@ -1,4 +1,4 @@
-<h1 align="center"> NOTE DE CLARIFICATION <\h1>
+<h1 align="center"> NOTE DE CLARIFICATION <\h1> <br>
 
 **INTEGRANTS**
 
@@ -18,7 +18,7 @@ Le gestionnaire de la clinique veut pouvoir ajouter et mettre à jour la liste d
 
 <hr>
 
-<h2 align="center"> LIVRABLES <\h2> <br>
+<h2 align="center"> LIVRABLES <\h2> <br> <br>
 
 <font size=2>
 1.  Livrables v1 ()
