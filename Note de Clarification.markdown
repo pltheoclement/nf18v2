@@ -21,7 +21,8 @@ Le gestionnaire de la clinique veut pouvoir ajouter et mettre à jour la liste d
 <h2 align="center"> LIVRABLES <\h2> <br> <br>
 
 <font size=2>
-1.  Livrables v1 ()
+ Livrables v1 () 
+<br>
 
 - README (avec les noms des membres du groupe)
 - NDC
@@ -30,7 +31,8 @@ Le gestionnaire de la clinique veut pouvoir ajouter et mettre à jour la liste d
 - BDD : tables, données de test, questions attendues
 - Application Python
 
-2.  Livrables v2 ()
+Livrables v2 ()
+<br>
 
 - README (avec les noms des membres du groupe)
 - NDC
