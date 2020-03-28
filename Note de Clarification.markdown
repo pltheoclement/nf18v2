@@ -1,1 +1,1 @@
-*prueba*
+# NOTE DE CLARIFICATION
