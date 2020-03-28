@@ -1,6 +1,6 @@
 <p align="center">
 
-# NOTE DE CLARIFICATION 
+<h1> NOTE DE CLARIFICATION <\h1> 
 
 #### Douale Clement
 #### Ledoux Matteo
