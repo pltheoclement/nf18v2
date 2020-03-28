@@ -14,6 +14,7 @@
 
 Ce projet de NF18 vise à développer une gestion d'une clinique vétérinaire. 
 Le gestionnaire de la clinique veut pouvoir ajouter et mettre à jour la liste des personnels, des clients, des animaux traités et les médicaments utilisés. Il doit aussi pouvoir obtenir facilement des rapports d'activité et des informations statistiques, comme les quantités de médicaments consommés, le nombre de traitement ou de procédure effectuées dans la clinique, ou encore des statistiques sur les espèces d'animaux traités.
+Ces informations seront présentées sous la forme d’une base de données, dans laquelle elles seront stockées. 
 
 
 <hr>
@@ -25,30 +26,33 @@ Le gestionnaire de la clinique veut pouvoir ajouter et mettre à jour la liste d
 <br>
 
 - README (avec les noms des membres du groupe)
-- NDC
+- Analyse du besoin de l’utilisateur - Note de clarification
 - MCD
 - MLD relationnel
-- BDD : tables, données de test, questions attendues
+- La base de données : tables, données de test, questions attendues
 - Application Python
 
 Livrables v2 ()
 <br>
 
-- README (avec les noms des membres du groupe)
-- NDC
+- Actualisation - Note de clarification
 - MCD
 - MLD relationnel
-- BDD : tables et vues, données de test, questions attendues (vues)
+- La base de données  : tables et vues, données de test, questions attendues (vues)
 - Application Python
 
 
-nous reprendrons l'ensemble de votre projet afin :
+Nous reprendrons l'ensemble de votre projet afin :
 
 *De corriger les erreurs relevées dans la v2 <br>
 De refaire votre conception afin d'intégrer : héritage, contraintes, composition, vues, requêtes statistiques (agrégats), normalisation, transaction et optimisation<br>
 De l'augmenter de nouvelles fonctions (+25%)*
 
 <hr>
+
+<h2 align="center"> Contraintes <\h2> <br> 
+
+<h2 align="center"> Risques <\h2> <br> 
 
 <h2 align="center"> DÉTAILS DU SYSTÈME <\h2> <br> 
 
