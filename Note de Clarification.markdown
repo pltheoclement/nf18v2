@@ -64,7 +64,7 @@ Les differents objects qu'on veut répresenter sont:
 * les medicaments
 * les dossiers medicaux
 
-
+<h4> Le client <\h4> <br> 
 
 
 
