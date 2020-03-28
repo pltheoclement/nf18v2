@@ -90,4 +90,71 @@ Les differents objects qu'on veut répresenter sont:
 - Numéro  de puce d'identification
 - Numéro de passeport
 
+<h4> Dossier médical  <\h4> <br>
 
+La taille: 
+            Mesure 
+            Date et heure
+
+Le poids:
+
+            Mesure
+            Date et une heure 
+
+La consultation:
+
+            Date de consultation
+            Observation
+            Personnel effectuant la consultation
+            Date et heure
+
+Le traitement:
+
+            Date de début
+            Durée
+            Date de saisie dans la base de données
+
+
+Un traitement ne peut être prescrit que par un vétérinaire de la clinique et comprend un à plusieurs médicaments.
+
+L’analyse
+
+
+son résultat, un lien vers un document électronique, qui est unique
+
+
+sa date de saisie dans la base de données
+
+
+Un patient peut ne pas avoir eu d’analyses pendant son suivi.
+
+La procédure
+La procédure doit être réalisée sur le patient avec sa description. Elle se caractérise par :
+
+
+un nom
+
+
+une description
+
+
+une date et heure de saisie dans la base de données
+
+
+
+Le médicament
+Le médicament est le composé pharmaceutique qui sera administré au client en fonction de ses besoins.
+Certains médicaments ne peuvent être prescrits qu’à certaines espèces de clients.
+Chaque médicament se caractérise par :
+
+
+un nom de molécule permettant d’identifier le médicament.
+
+
+un ensemble d’effets, présentés sous la forme d’une description.
+
+
+
+La posologie
+La posologie correspond à la quantité de médicaments qui doit être administrée à un client donné dans le cadre d'un traitement.
+Elle sera caractérisée par une quantité par jour d’un médicament à consommer.
