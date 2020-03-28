@@ -50,20 +50,7 @@ De l'augmenter de nouvelles fonctions (+25%)*
 
 <hr>
 
-<h2 align="center"> Contraintes <\h2> <br> 
 
-<hr>
-
-
-
-<hr>
-<h2 align="center"> Risques <\h2> <br> 
-<br>
-
-- Mauvaise organisation
-
-
-<hr>
 
 <h2 align="center"> DÉTAILS DU SYSTÈME <\h2> <br> 
 
