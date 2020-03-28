@@ -90,16 +90,24 @@ Les differents objects qu'on veut répresenter sont:
 - Numéro  de puce d'identification
 - Numéro de passeport
 
+<h4> Le médicament <\h4> <br>
+
+
+- nom de molécule
+- ensemble d’effets
+
 <h4> Dossier médical  <\h4> <br>
 
-La taille: 
-            Mesure 
-            Date et heure
 
 Le poids:
 
             Mesure
             Date et une heure 
+
+La taille: 
+            Mesure 
+            Date et heure
+
 
 La consultation:
 
@@ -130,11 +138,4 @@ La procédure
             Nom
             Description
             Date et heure
-
-
-<h4> Le médicament <\h4> <br>
-
-
-- nom de molécule
-- ensemble d’effets
 
