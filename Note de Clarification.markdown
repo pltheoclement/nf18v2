@@ -56,11 +56,12 @@ Nous cherchons à représenter différents objets au sein d'une base de données
 
 Les differents objects qu'on veut répresenter sont:
 
--les clients
--les personals soignants
--les animaux
--les medicaments
--les dossiers medicaux
+* les clients
+* les personals soignants
+* les animaux
+* les medicaments
+* les dossiers medicaux
+
 
 
 
