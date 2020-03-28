@@ -64,9 +64,11 @@ Les differents objects qu'on veut répresenter sont:
 * les medicaments
 * les dossiers medicaux
 
-<h4> Le client <\h4> <br> 
 
 <br>
+
+<h4> Le client <\h4> <br> 
+
 
 - Nom
 - Prénom
@@ -74,6 +76,5 @@ Les differents objects qu'on veut répresenter sont:
 - Numéro de téléphone
 - Adresse
 
-<br>
 
 
