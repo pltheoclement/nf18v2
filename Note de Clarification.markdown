@@ -85,11 +85,9 @@ Les differents objects qu'on veut répresenter sont:
 <h4> Animal  <\h4> <br> 
 
 - Nom
-- espèce
+- Espèce: félin, canidé, reptile, rongeur, oiseau, autre
 - Date de naissance
 - Numéro  de puce d'identification
 - Numéro de passeport
-- Liste de ses propriétaires
-- Période propriétaire
-- Interventions
+
 
