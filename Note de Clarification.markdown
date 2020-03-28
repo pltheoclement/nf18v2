@@ -4,6 +4,6 @@
 # NOTE DE CLARIFICATION
 
 
-<\center>
+
 
 
