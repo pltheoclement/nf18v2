@@ -1,3 +1,4 @@
+<p align="center">
 
 # NOTE DE CLARIFICATION 
 
@@ -6,4 +7,7 @@
 #### Tetar Pierre
 #### Zuniga Uriel
 #### Perez Steven
+</p>
+
+
 
