@@ -82,7 +82,7 @@ Les differents objects qu'on veut répresenter sont:
 - Adresse
 - Spécialité
 
-<h4> Animal  <\h4> <br> 
+<h4> Animal  </h4> <br> 
 
 - Nom
 - Espèce: félin, canidé, reptile, rongeur, oiseau, autre
@@ -90,13 +90,13 @@ Les differents objects qu'on veut répresenter sont:
 - Numéro  de puce d'identification
 - Numéro de passeport
 
-<h4> Le médicament <\h4> <br>
+<h4> Le médicament </h4> <br>
 
 
 - nom de molécule
 - ensemble d’effets
 
-<h4> Dossier médical  <\h4> <br>
+<h4> Dossier médical  </h4> <br>
 
 
 Le poids:
@@ -105,9 +105,9 @@ Le poids:
             Date et une heure 
 
 La taille: 
-            Mesure 
-            Date et heure
 
+            Mesure
+            Date et une heure 
 
 La consultation:
 
