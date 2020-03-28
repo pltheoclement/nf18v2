@@ -66,5 +66,14 @@ Les differents objects qu'on veut répresenter sont:
 
 <h4> Le client <\h4> <br> 
 
+<br>
+
+- Nom
+- Prénom
+- Date de naissance
+- Numéro de téléphone
+- Adresse
+
+
 
 
