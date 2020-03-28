@@ -119,42 +119,22 @@ Un traitement ne peut être prescrit que par un vétérinaire de la clinique et 
 
 L’analyse
 
-
-son résultat, un lien vers un document électronique, qui est unique
-
-
-sa date de saisie dans la base de données
+            Résultat
+            Date 
 
 
 Un patient peut ne pas avoir eu d’analyses pendant son suivi.
 
 La procédure
-La procédure doit être réalisée sur le patient avec sa description. Elle se caractérise par :
+
+            Nom
+            Description
+            Date et heure
 
 
-un nom
+<h4> Le médicament <\h4> <br>
 
 
-une description
+- nom de molécule
+- ensemble d’effets
 
-
-une date et heure de saisie dans la base de données
-
-
-
-Le médicament
-Le médicament est le composé pharmaceutique qui sera administré au client en fonction de ses besoins.
-Certains médicaments ne peuvent être prescrits qu’à certaines espèces de clients.
-Chaque médicament se caractérise par :
-
-
-un nom de molécule permettant d’identifier le médicament.
-
-
-un ensemble d’effets, présentés sous la forme d’une description.
-
-
-
-La posologie
-La posologie correspond à la quantité de médicaments qui doit être administrée à un client donné dans le cadre d'un traitement.
-Elle sera caractérisée par une quantité par jour d’un médicament à consommer.
