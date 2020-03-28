@@ -128,7 +128,7 @@ Un traitement ne peut être prescrit que par un vétérinaire de la clinique et 
 
 L’analyse
 
-            Résultat
+            Lien vers les résultats
             Date 
 
 
