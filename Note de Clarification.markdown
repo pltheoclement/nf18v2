@@ -40,9 +40,11 @@ Le gestionnaire de la clinique veut pouvoir ajouter et mettre à jour la liste d
 
 nous reprendrons l'ensemble de votre projet afin :
 
-    de corriger les erreurs relevées dans la v2
-    de refaire votre conception afin d'intégrer : héritage, contraintes, composition, vues, requêtes statistiques (agrégats), normalisation, transaction et optimisation
-    de l'augmenter de nouvelles fonctions (+25%)
+*De corriger les erreurs relevées dans la v2
+De refaire votre conception afin d'intégrer : héritage, contraintes, composition, vues, requêtes statistiques (agrégats), normalisation, transaction et optimisation
+De l'augmenter de nouvelles fonctions (+25%)*
+
+
 
 
 
