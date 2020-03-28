@@ -74,6 +74,6 @@ Les differents objects qu'on veut répresenter sont:
 - Numéro de téléphone
 - Adresse
 
-
+<br>
 
 
