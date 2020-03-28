@@ -80,6 +80,7 @@ Les differents objects qu'on veut répresenter sont:
 - Date de naissance
 - Numéro de téléphone
 - Adresse
+- Poste : vétérinaire ou assistant
 - Spécialité
 
 <h4> Animal  </h4> <br> 
