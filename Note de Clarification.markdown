@@ -52,6 +52,8 @@ De l'augmenter de nouvelles fonctions (+25%)*
 
 <h2 align="center"> Contraintes <\h2> <br> 
 
+<hr>
+
 <h2 align="center"> Risques <\h2> <br> 
 
 <h2 align="center"> DÉTAILS DU SYSTÈME <\h2> <br> 
