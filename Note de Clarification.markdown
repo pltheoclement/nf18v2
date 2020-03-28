@@ -8,7 +8,7 @@
 * ZUNIGA Uriel
 * PEREZ Steven
 
-<br>
+<hr>
 
 
 
