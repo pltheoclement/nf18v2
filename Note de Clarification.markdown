@@ -65,10 +65,7 @@ Les differents objects qu'on veut répresenter sont:
 * les dossiers medicaux
 
 
-<br>
-
 <h4> Le client <\h4> <br> 
-
 
 - Nom
 - Prénom
@@ -76,5 +73,23 @@ Les differents objects qu'on veut répresenter sont:
 - Numéro de téléphone
 - Adresse
 
+<h4> Les personals soignants <\h4> <br> 
 
+- Nom
+- Prénom
+- Date de naissance
+- Numéro de téléphone
+- Adresse
+- Spécialité
+
+<h4> Animal  <\h4> <br> 
+
+- Nom
+- espèce
+- Date de naissance
+- Numéro  de puce d'identification
+- Numéro de passeport
+- Liste de ses propriétaires
+- Période propriétaire
+- Interventions
 
