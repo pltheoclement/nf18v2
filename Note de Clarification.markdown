@@ -54,8 +54,14 @@ De l'augmenter de nouvelles fonctions (+25%)*
 
 <hr>
 
+
+
+<hr>
 <h2 align="center"> Risques <\h2> <br> 
+
+
 - Mauvaise organisation
+
 
 <hr>
 
