@@ -1,2 +1,4 @@
-<center> # NOTE DE CLARIFICATION </center>
+\begin{center}
+
+# NOTE DE CLARIFICATION 
 
