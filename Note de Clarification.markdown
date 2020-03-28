@@ -1,1 +1,2 @@
-# NOTE DE CLARIFICATION
+<center> # NOTE DE CLARIFICATION </center>
+
