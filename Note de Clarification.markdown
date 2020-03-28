@@ -41,13 +41,14 @@ Livrables v2 ()
 - BDD : tables et vues, données de test, questions attendues (vues)
 - Application Python
 
-<\font>
-
+<p>
 nous reprendrons l'ensemble de votre projet afin :
 
 *De corriger les erreurs relevées dans la v2 <br>
 De refaire votre conception afin d'intégrer : héritage, contraintes, composition, vues, requêtes statistiques (agrégats), normalisation, transaction et optimisation<br>
 De l'augmenter de nouvelles fonctions (+25%)*
+
+<\p>
 
 
 
