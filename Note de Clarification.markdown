@@ -50,6 +50,7 @@ De l'augmenter de nouvelles fonctions (+25%)*
 
 <hr>
 
+<h2 align="center"> DÉTAILS DU SYSTÈME <\h2> <br> 
 
 
 
