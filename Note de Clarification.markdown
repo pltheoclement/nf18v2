@@ -14,7 +14,7 @@
 
 Ce projet de NF18 vise à développer une gestion d'une clinique vétérinaire. 
 Le gestionnaire de la clinique veut pouvoir ajouter et mettre à jour la liste des personnels, des clients, des animaux traités et les médicaments utilisés. Il doit aussi pouvoir obtenir facilement des rapports d'activité et des informations statistiques, comme les quantités de médicaments consommés, le nombre de traitement ou de procédure effectuées dans la clinique, ou encore des statistiques sur les espèces d'animaux traités.
-Ces informations seront présentées sous la forme d’une base de données, dans laquelle elles seront stockées. 
+Ces informations seront présentées sous la forme d’une base de données, dans laquelle elles seront stockées. Un programme python permettra de gérer les requètes du gestionnaire de la clinique pour modifier la base de donnée en conséquence. 
 
 
 <hr>
