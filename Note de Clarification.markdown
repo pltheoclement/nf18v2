@@ -103,40 +103,40 @@ Les differents objects qu'on veut répresenter sont:
 Le poids:
 
             Mesure
-            Date et une heure 
+            Date et heure de saisie
 
 La taille: 
 
             Mesure
-            Date et une heure 
+            Date et heure de saisie
 
 La consultation:
 
             Date de consultation
             Observation
             Personnel effectuant la consultation
-            Date et heure
+            Date et heure de saisie
 
 Le traitement:
 
             Date de début
             Durée
-            Date de saisie dans la base de données
+            Date et heure de saisie
 
 
 Un traitement ne peut être prescrit que par un vétérinaire de la clinique et comprend un à plusieurs médicaments (avec une quantité à administrer chaque jour).
 
-L’analyse
+L’analyse:
 
             Lien vers les résultats
-            Date 
+            Date et heure de saisie 
 
 
 Un patient peut ne pas avoir eu d’analyses pendant son suivi.
 
-La procédure
+La procédure:
 
             Nom
             Description
-            Date et heure
+            Date et heure de saisie
 
