@@ -20,6 +20,7 @@ Le gestionnaire de la clinique veut pouvoir ajouter et mettre à jour la liste d
 
 <h2 align="center"> LIVRABLES <\h2>
 
+<font size=5>
 1.  Livrables v1 ()
 
 - README (avec les noms des membres du groupe)
@@ -38,10 +39,12 @@ Le gestionnaire de la clinique veut pouvoir ajouter et mettre à jour la liste d
 - BDD : tables et vues, données de test, questions attendues (vues)
 - Application Python
 
+<\font>
+
 nous reprendrons l'ensemble de votre projet afin :
 
 *De corriger les erreurs relevées dans la v2 <br>
-De refaire votre conception afin d'intégrer : héritage, contraintes, composition, vues, requêtes statistiques (agrégats), normalisation, transaction et optimisation
+De refaire votre conception afin d'intégrer : héritage, contraintes, composition, vues, requêtes statistiques (agrégats), normalisation, transaction et optimisation<br>
 De l'augmenter de nouvelles fonctions (+25%)*
 
 
