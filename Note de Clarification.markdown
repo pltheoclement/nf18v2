@@ -52,7 +52,7 @@ De l'augmenter de nouvelles fonctions (+25%)*
 
 
 
-<h2 align="center"> DÉTAILS DU SYSTÈME <\h2> <br> 
+<h2 align="center"> DÉTAILS DU SYSTÈME </h2> <br> 
 
 Nous cherchons à représenter différents objets au sein d'une base de données afin d'organiser la clinique vétérinaire.
 
@@ -65,7 +65,7 @@ Les differents objects qu'on veut répresenter sont:
 * les dossiers medicaux
 
 
-<h4> Le client <\h4> <br> 
+<h4> Le client </h4> <br> 
 
 - Nom
 - Prénom
@@ -73,7 +73,7 @@ Les differents objects qu'on veut répresenter sont:
 - Numéro de téléphone
 - Adresse
 
-<h4> Les personals soignants <\h4> <br> 
+<h4> Les personals soignants </h4> <br> 
 
 - Nom
 - Prénom
