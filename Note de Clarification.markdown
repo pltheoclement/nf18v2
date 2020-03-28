@@ -123,7 +123,7 @@ Le traitement:
             Date de saisie dans la base de données
 
 
-Un traitement ne peut être prescrit que par un vétérinaire de la clinique et comprend un à plusieurs médicaments.
+Un traitement ne peut être prescrit que par un vétérinaire de la clinique et comprend un à plusieurs médicaments (avec une quantité à administrer chaque jour).
 
 L’analyse
 
