@@ -56,6 +56,8 @@ De l'augmenter de nouvelles fonctions (+25%)*
 
 <h2 align="center"> Risques <\h2> <br> 
 
+<hr>
+
 <h2 align="center"> DÉTAILS DU SYSTÈME <\h2> <br> 
 
 Nous cherchons à représenter différents objets au sein d'une base de données afin d'organiser la clinique vétérinaire.
