@@ -18,9 +18,9 @@ Le gestionnaire de la clinique veut pouvoir ajouter et mettre à jour la liste d
 
 <hr>
 
-<h2 align="center"> LIVRABLES <\h2> <br> <br>
+<h2 align="center"> LIVRABLES <\h2> <br> 
 
-<font size=2>
+
  Livrables v1 () 
 <br>
 
