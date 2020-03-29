@@ -140,3 +140,10 @@ La procédure:
             Description
             Date et heure de saisie
 
+Liste des utilisateurs (rôles) appelés à modifier et consulter les données :
+
+    Le gestionnaire de la clinique veut pouvoir mettre à jour, ajouter et consulter les objets de la base de données.
+    Les personnels soignants pourront consulter et modifier les dossiers médicaux des patients.
+    
+    
+    
