@@ -22,7 +22,7 @@ Ces informations seront présentées sous la forme d’une base de données, dan
 <h2 align="center"> LIVRABLES <\h2> <br> 
 
 
- Livrables v1 () 
+ Livrables v1 
 <br>
 
 - README (avec les noms des membres du groupe) | date de rendu : 22/03/2020
@@ -32,7 +32,7 @@ Ces informations seront présentées sous la forme d’une base de données, dan
 - La base de données : tables, données de test, questions attendues | date de rendu : 05/04/2020
 - Application Python | date de rendu : 05/04/2020
 
-Livrables v2 ()
+Livrables v2 
 <br>
 
 - Actualisation - Note de clarification | date de rendu : NC
