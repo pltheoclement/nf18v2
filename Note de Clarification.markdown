@@ -89,9 +89,11 @@ Le personnel de la clinique ne doit pas avoir d'animaux de compagnie traités da
 
 - Nom
 - Espèce: félin, canidé, reptile, rongeur, oiseau, autre
-- Date de naissance
-- Numéro  de puce d'identification
-- Numéro de passeport
+- Date de naissance (Peut être une année ou inconnue)
+- Numéro  de puce d'identification (Peut être NULL)
+- Numéro de passeport (Peut être NULL)
+- La liste de ses propriétaires et la période durant laquelle l'animal était avec eux
+- La liste des vétérinaires qui l'ont suivi (Lien avec Personnel soignant et Consultation pour connaître quand ils l'ont suivi)
 
 <h4> Le médicament </h4> <br>
 
@@ -131,7 +133,7 @@ Un traitement ne peut être prescrit que par un vétérinaire de la clinique et 
 
 L’analyse:
 
-            Lien vers les résultats
+            Lien vers les résultats (sous forme de document électronique)
             Date et heure de saisie 
 
 
