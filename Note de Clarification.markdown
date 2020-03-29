@@ -158,3 +158,6 @@ Liste des fonctions que ces utilisateurs pourront effectuer :
         - le nombre de traitement ou de procédure effectuées dans la clinique
         - les espèces d'animaux traités
     
+    Les personnels soignants peuvent ajouter, consulter et mettre à jour :
+        - la liste des clients
+        - les dossiers médicaux
