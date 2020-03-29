@@ -56,10 +56,10 @@ De l'augmenter de nouvelles fonctions (+25%)*
 
 Nous cherchons à représenter différents objets au sein d'une base de données afin d'organiser la clinique vétérinaire.
 
-Les differents objects qu'on veut répresenter sont:
+Les differents objets qu'on veut répresenter sont:
 
 * les clients
-* les personals soignants
+* les personnels soignants
 * les animaux
 * les medicaments
 * les dossiers medicaux
@@ -73,7 +73,7 @@ Les differents objects qu'on veut répresenter sont:
 - Numéro de téléphone
 - Adresse
 
-<h4> Les personals soignants </h4> <br> 
+<h4> Le personnel soignant </h4> <br> 
 
 - Nom
 - Prénom
@@ -83,7 +83,9 @@ Les differents objects qu'on veut répresenter sont:
 - Poste : vétérinaire ou assistant
 - Spécialité
 
-<h4> Animal  </h4> <br> 
+Le personnel de la clinique ne doit pas avoir d'animaux de compagnie traités dans la clinique
+
+<h4> L'animal  </h4> <br> 
 
 - Nom
 - Espèce: félin, canidé, reptile, rongeur, oiseau, autre
@@ -93,9 +95,10 @@ Les differents objects qu'on veut répresenter sont:
 
 <h4> Le médicament </h4> <br>
 
-
 - nom de molécule
 - ensemble d’effets
+
+Un médicament n'est autorisé que pour certaines espèces.
 
 <h4> Dossier médical  </h4> <br>
 
