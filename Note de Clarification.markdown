@@ -25,21 +25,21 @@ Ces informations seront présentées sous la forme d’une base de données, dan
  Livrables v1 () 
 <br>
 
-- README (avec les noms des membres du groupe)
-- Analyse du besoin de l’utilisateur - Note de clarification
-- MCD
-- MLD relationnel
-- La base de données : tables, données de test, questions attendues
-- Application Python
+- README (avec les noms des membres du groupe) | date de rendu : 22/03/2020
+- Analyse du besoin de l’utilisateur - Note de clarification | date de rendu : 29/03/2020
+- MCD | date de rendu : 05/04/2020
+- MLD relationnel | date de rendu : 05/04/2020
+- La base de données : tables, données de test, questions attendues | date de rendu : 05/04/2020
+- Application Python | date de rendu : 05/04/2020
 
 Livrables v2 ()
 <br>
 
-- Actualisation - Note de clarification
-- MCD
-- MLD relationnel
-- La base de données  : tables et vues, données de test, questions attendues (vues)
-- Application Python
+- Actualisation - Note de clarification | date de rendu : NC
+- MCD | date de rendu : NC
+- MLD relationnel | date de rendu : NC
+- La base de données  : tables et vues, données de test, questions attendues (vues) | date de rendu : NC
+- Application Python | date de rendu : NC
 
 
 Nous reprendrons l'ensemble de votre projet afin :
