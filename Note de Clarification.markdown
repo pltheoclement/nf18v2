@@ -145,5 +145,16 @@ Liste des utilisateurs (rôles) appelés à modifier et consulter les données :
     Le gestionnaire de la clinique veut pouvoir mettre à jour, ajouter et consulter les objets de la base de données.
     Les personnels soignants pourront consulter et modifier les dossiers médicaux des patients.
     
+Liste des fonctions que ces utilisateurs pourront effectuer :
     
+    Le gestionnaire de la clinique peut ajouter et mettre à jour :
+        - la liste des personnels
+        - la liste des clients
+        - la liste des animaux traités
+        - les médicaments utilisés
+        
+    Il peut aussi obtenir facilement des rapports d'activité et des informations statistiques sur :
+        - les quantités de médicaments consommés
+        - le nombre de traitement ou de procédure effectuées dans la clinique
+        - les espèces d'animaux traités
     
