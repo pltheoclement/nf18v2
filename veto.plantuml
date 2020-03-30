@@ -48,7 +48,6 @@ class Resultats_analyse {
 }
 
 class Consulter {
-  id : numeric {key}
   dateConsult : date
   observation : text
   dtSaisie : date
