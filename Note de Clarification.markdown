@@ -42,7 +42,7 @@ Livrables v2
 - Application Python | date de rendu : NC
 
 
-Nous reprendrons l'ensemble de votre projet afin :
+Nous reprendrons l'ensemble de notre projet afin :
 
 *De corriger les erreurs relevées dans la v2 <br>
 De refaire notre conception afin d'intégrer : héritage, contraintes, composition, vues, requêtes statistiques (agrégats), normalisation, transaction et optimisation<br>
