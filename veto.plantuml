@@ -1,0 +1,100 @@
+@startuml
+hide circle
+
+class Animaux {
+  id : numeric {key}
+  nom : text
+  dtNaiss : date
+  numPuce : numeric
+  numPasseport : numeric
+  espece : {felin, canide, reptile, rongeur, oiseau, autre}
+}
+
+class Clients {
+  id : numeric {key}
+  nom : text
+  prenom : text
+  dtNaiss : date
+  adresse : text
+  tel : numeric
+}
+
+class Personnel {
+  id : numeric {key}
+  nom : text
+  prenom : text
+  dtNaiss : date
+  adresse : text
+  tel : numeric
+  poste : {veterinaire, assistant}
+  specialite : text
+}
+
+class Medicaments {
+  id : numeric {key}
+  molecule : text
+  effets : text
+}
+
+class Traitements {
+  id : numeric {key}
+  dtDebut : date
+  dtSaisie : date
+}
+
+class Resultats_analyse {
+  lien : ? {key}
+  dtSaisie
+}
+
+class Consulter {
+  id : numeric {key}
+  dateConsult : date
+  observation : text
+  dtSaisie : date
+}
+
+class Procedures {
+  id : numeric {key}
+  description : text
+  dtSaisie : date
+}
+
+class Poids {
+  mesure : numeric
+}
+
+class Taille {
+  mesure : numeric
+}
+
+class Appartenir {
+  debut_periode : date
+  fin_periode : date
+}
+
+class Prise_medicament {
+  duree : numeric
+  quantite_jour : numeric
+}
+
+class Suivre {
+  debut_suivi : date
+  fin_suivi : date
+}
+
+Clients "1..n" - "1..n" Animaux
+(Animaux, Clients) .. Appartenir
+Animaux "0..n" - "0..n" Personnel
+(Animaux, Personnel) . Consulter
+Personnel "1" - "0..n" Traitements : traiter
+Animaux "0..n" -- "1..n" Personnel
+(Animaux, Personnel) . Suivre
+Animaux "1" - "0..n" Poids : peser
+Taille "0..n" -- "1" Animaux : mesurer
+Traitements "0..n" - "1..n" Medicaments
+(Medicaments, Traitements) .. Prise_medicament
+Resultats_analyse "0..n" -- "1" Animaux
+Procedures "0..n" -- "1" Animaux
+
+@enduml
