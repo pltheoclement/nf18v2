@@ -2,16 +2,13 @@
 hide circle
 
 class Animaux {
-  id : numeric {key}
   nom : text
   dtNaiss : date
   numPuce : numeric
   numPasseport : numeric
-  espece : {felin, canide, reptile, rongeur, oiseau, autre}
 }
 
 class Clients {
-  id : numeric {key}
   nom : text
   prenom : text
   dtNaiss : date
@@ -20,7 +17,6 @@ class Clients {
 }
 
 class Personnel {
-  id : numeric {key}
   nom : text
   prenom : text
   dtNaiss : date
@@ -31,19 +27,17 @@ class Personnel {
 }
 
 class Medicaments {
-  id : numeric {key}
   molecule : text
   effets : text
 }
 
 class Traitements {
-  id : numeric {key}
   dtDebut : date
   dtSaisie : date
 }
 
 class Resultats_analyse {
-  lien : ? {key}
+  lien : text {key}
   dtSaisie
 }
 
@@ -54,7 +48,6 @@ class Consulter {
 }
 
 class Procedures {
-  id : numeric {key}
   description : text
   dtSaisie : date
 }
@@ -84,19 +77,33 @@ class Suivre {
   fin_suivi : date
 }
 
-Clients "1..n" - "1..n" Animaux
+class Especes {
+  nom : text {key}
+}
+
+class DossierMed {
+}
+
+
+Animaux "1..n" - "1..n" Clients
 (Animaux, Clients) .. Appartenir
-Animaux "0..n" - "0..n" Personnel
-(Animaux, Personnel) . Consulter
-Personnel "1" - "0..n" Traitements : traiter
+Consulter "0..n" -- "1" Personnel
+Personnel "1" -- "0..n" Traitements : traiter
 Animaux "0..n" -- "1..n" Personnel
 (Animaux, Personnel) . Suivre
-Animaux "1" - "0..n" Poids : peser
-Taille "0..n" -- "1" Animaux : mesurer
 Traitements "0..n" - "1..n" Medicaments
 (Medicaments, Traitements) .. Prise_medicament
-Resultats_analyse "0..n" -- "1" Animaux
-Procedures "0..n" -- "1" Animaux
-Animaux "1" -- "0..n" Traitements : prendre
+Procedures "0..n" - "1" Personnel : ecrire
+DossierMed "1" - "1" Animaux
+Resultats_analyse "0..n" - "1" DossierMed
+Poids "0..n" -- "1" DossierMed
+Taille "0..n" -- "1" DossierMed
+DossierMed "1" -- "0..n" Procedures
+DossierMed "1" -- "0..n" Consulter
+DossierMed "1" -- "0..n" Traitements
+Animaux "0..n" -- "1" Especes
+Especes "1..n" -- "0..n" Personnel : specialite
+
+
 
 @enduml
