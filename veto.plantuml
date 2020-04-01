@@ -97,5 +97,6 @@ Traitements "0..n" - "1..n" Medicaments
 (Medicaments, Traitements) .. Prise_medicament
 Resultats_analyse "0..n" -- "1" Animaux
 Procedures "0..n" -- "1" Animaux
+Animaux "1" -- "0..n" Traitements : prendre
 
 @enduml
