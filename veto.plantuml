@@ -154,4 +154,8 @@ Pour la class "Poids"
   mesure : NOT NULL et mesure > 0
   dtSaisie : NOT NULL
   
+Pour la class "Taille"
+  mesure : NOT NULL et mesure > 0
+  dtSaisie : NOT NULL
+  
 
