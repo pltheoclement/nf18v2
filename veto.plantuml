@@ -107,3 +107,19 @@ Especes "1..n" -- "0..n" Personnel : specialite
 
 
 @enduml
+
+Contraintes:
+
+Pour la class "Animaux":
+  nom : NOT NULL
+  dtNaiss : NOT NULL
+
+Pour la class "Clients"
+  nom : NOT NULL
+  prenom : NOT NULL
+  dtNaiss : NOT NULL
+  adresse : NOT NULL
+  tel : NOT NULL
+  
+  Pour la class "Personnel"
+
