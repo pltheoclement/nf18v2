@@ -38,20 +38,20 @@ Medicaments (
   #id : integer,
   molecule : string,
   effets : string
-)
+) avec molecule et effets NOT NULL
 
 Traitements (
   #id : integer,
   dtDebut : date,
   dtSaisie : date,
   num_dossier => Animaux.DossierMed
-)
+) avec dtDebut et dtSaisie NOT NULL
 
 Resultats_analyse (
   #lien : string  ( lien vers fichier ),
   dtSaisie : date,
   num_dossier => Animaux.DossierMed
-)
+) avec dtSaisie NOT NULL
 
 Consulter (
   dateConsult : date,
@@ -60,7 +60,7 @@ Consulter (
   num_dossier => Animaux.DossierMed,
   animal => Animaux.id,
   personnel => Personnel.id
-)
+) avec dateConsult et dtSaisie NOT NULL
 
 Procedures (
   #id : integer,
@@ -88,18 +88,18 @@ Appartenir (
   fin_periode : date,
   animal=> Animaux.id,
   client=> Client.id
-)
+) avec debut_periode et fin_periode NOT NULL
 
 Prise_medicament (
   duree : integer,
   quantite_jour : integer,
   traitement=> Traitements.id,
   médicament=> Médicaments.id
-)
+) avec duree et quantite_jour NOT NULL
 
 Suivre (
   debut_suivi : date,
   fin_suivi : date,
   animal => Animaux.id,
   personnel => Personnel.id
-)
+) avec debut_suivi et fin_suivi NOT NULL
