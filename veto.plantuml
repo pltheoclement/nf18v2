@@ -4,8 +4,8 @@ hide circle
 class Animaux {
   nom : text
   dtNaiss : date
-  numPuce : numeric
-  numPasseport : numeric
+  numPuce : numeric [0..1]
+  numPasseport : numeric [0..1]
 }
 
 class Clients {
@@ -112,6 +112,8 @@ Contraintes:
 
 Pour la class "Animaux":
   nom : NOT NULL
+  numPuce : UNIQUE
+  numPasseport : UNIQUE
   dtNaiss : NOT NULL
 
 Pour la class "Clients"
@@ -138,5 +140,18 @@ Pour la class "Traitements"
   dtSaisie : date
   
 Pour la class "Resultats_analyse"
-    dtSaisie
+    dtSaisie: NOT NULL
+    
+Pour la class "Consulter"
+  dateConsult : NOT NULL
+  dtSaisie : NOT NULL
+
+Pour la class "Procedures"
+  description : NOT NULL
+  dtSaisie : NOT NULL
+
+Pour la class "Poids"
+  mesure : NOT NULL et mesure > 0
+  dtSaisie : NOT NULL
+  
 
