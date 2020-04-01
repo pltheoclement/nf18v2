@@ -96,7 +96,7 @@ Prise_medicament (
   quantite_jour : integer,
   traitement=> Traitements.id,
   médicament=> Médicaments.id
-) avec duree et quantite_jour NOT NULL
+) avec duree et quantite_jour NOT NULL et (dure > 0 et quantite_jour > 0)
 
 Suivre (
   debut_suivi : date,
