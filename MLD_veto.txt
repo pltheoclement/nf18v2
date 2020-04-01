@@ -83,7 +83,6 @@ Taille (
   num_dossier => Animaux.DossierMed
 ) avec mesure et dtSaisie NOT NULL et mesure>0
 
-Contrainte: (Taille.mesure NOT NULL || Poids.mesure NOT NULL)
 
 Appartenir (
   debut_periode : date,
