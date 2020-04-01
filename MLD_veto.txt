@@ -42,20 +42,20 @@ Traitements (
   #id : integer,
   dtDebut : date,
   dtSaisie : date,
-  num_dossier => DossierMed
+  num_dossier => Animaux.DossierMed
 )
 
 Resultats_analyse (
   #lien : string  ( lien vers fichier ),
   dtSaisie : date,
-  num_dossier => DossierMed
+  num_dossier => Animaux.DossierMed
 )
 
 Consulter (
   dateConsult : date,
   observation : string,
   dtSaisie : date,
-  num_dossier => DossierMed,
+  num_dossier => Animaux.DossierMed,
   animal => Animaux.id,
   personnel => Personnel.id
 )
@@ -64,19 +64,19 @@ Procedures (
   #id : integer,
   description : string,
   dtSaisie : date,
-  num_dossier => DossierMed
+  num_dossier => Animaux.DossierMed
 )
 
 Poids (
   mesure : integer,
   dtSaisie : date,
-  num_dossier => DossierMed
+  num_dossier => Animaux.DossierMed
 )
 
 Taille (
   mesure : integer,
   dtSaisie : date,
-  num_dossier => DossierMed
+  num_dossier => Animaux.DossierMed
 )
 
 Appartenir (
