@@ -9,7 +9,7 @@ Animaux (
 ) avec nom, dtNaiss, espece et DossierMed NOT NULL
 
 Espèce (
-   #nom : {felin || canide || reptile || rongeur || oiseau || autre}
+   #nom : {felin, canide, reptile, rongeur, oiseau, autre}
 )
 
 Clients (
