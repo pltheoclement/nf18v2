@@ -1,0 +1,101 @@
+Animaux (
+  #id : integer,
+  nom : string,
+  dtNaiss : date,
+  numPuce : integer,
+  numPasseport : integer,
+  espece => Espèce,
+  DossierMed : integer
+) avec nom, dtNaiss, espece et DossierMed NOT NULL
+
+Espèce (
+   #nom : {felin, canide, reptile, rongeur, oiseau, autre}
+)
+
+Clients (
+  #id : integer,
+  nom : string,
+  prenom : string,
+  dtNaiss : date,
+  adresse : string,
+  tel : integer
+) avec nom, prenom, dtNaiss, adresse et tel NOT NULL
+
+Personnel (
+  #id : integer,
+  nom : string,
+  prenom : string,
+  dtNaiss : date,
+  adresse : string,
+  tel : integer,
+  poste : {veterinaire, assistant},
+  specialite => Espèce
+)
+
+class Medicaments (
+  #id : integer,
+  molecule : string,
+  effets : string
+)
+
+Traitements (
+  #id : integer,
+  dtDebut : date,
+  dtSaisie : date,
+  num_dossier => DossierMed
+)
+
+Resultats_analyse (
+  #lien : string  ( lien vers fichier ),
+  dtSaisie : date,
+  num_dossier => DossierMed
+)
+
+Consulter (
+  dateConsult : date,
+  observation : string,
+  dtSaisie : date,
+  num_dossier => DossierMed,
+  animal => Animaux.id,
+  personnel => Personnel.id
+)
+
+Procedures (
+  #id : integer,
+  description : string,
+  dtSaisie : date,
+  num_dossier => DossierMed
+)
+
+Poids (
+  mesure : integer,
+  dtSaisie : date,
+  num_dossier => DossierMed
+)
+
+Taille (
+  mesure : integer,
+  dtSaisie : date,
+  num_dossier => DossierMed
+)
+
+Appartenir (
+  debut_periode : date,
+  fin_periode : date,
+  animal=> Animaux.id,
+  client=> Client.id
+)
+
+Prise_medicament (
+  duree : integer,
+  quantite_jour : integer,
+  traitement=> Traitements.id,
+  médicament=> Médicaments.id
+)
+
+Suivre (
+  debut_suivi : date,
+  fin_suivi : date,
+  animal => Animaux.id,
+  personnel => Personnel.id
+)
