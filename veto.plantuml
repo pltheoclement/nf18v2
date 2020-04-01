@@ -121,5 +121,22 @@ Pour la class "Clients"
   adresse : NOT NULL
   tel : NOT NULL
   
-  Pour la class "Personnel"
+Pour la class "Personnel"
+  nom : NOT NULL
+  prenom : NOT NULL
+  dtNaiss : NOT NULL
+  adresse : NOT NULL
+  tel : NOT NULL
+  poste : NOT NULL
+
+Pour la class "Medicaments"
+  molecule : NOT NULL
+  effets : NOT NULL
+  
+Pour la class "Traitements"
+  dtDebut : date
+  dtSaisie : date
+  
+Pour la class "Resultats_analyse"
+    dtSaisie
 
