@@ -47,6 +47,8 @@ Traitements (
   num_dossier => Animaux.DossierMed
 ) avec dtDebut et dtSaisie NOT NULL
 
+Contrainte : seul un vétérinaire peut prescrire un traitement
+
 Resultats_analyse (
   #lien : string  ( lien vers fichier ),
   dtSaisie : date,
