@@ -32,7 +32,7 @@ Personnel (
   specialite => Espèce
 )
 
-class Medicaments (
+Medicaments (
   #id : integer,
   molecule : string,
   effets : string
