@@ -61,10 +61,12 @@ class Procedures {
 
 class Poids {
   mesure : numeric
+  dtSaisie : date
 }
 
 class Taille {
   mesure : numeric
+  dtSaisie : date
 }
 
 class Appartenir {
