@@ -32,7 +32,7 @@ Personnel (
   specialite => Espèce
 ) avec nom, prenom, dtNaiss, adresse, tel et poste NOT NULL
 
-Contraite : Personnel ≠ Clients
+Contraite : Un personnel ne peut pas être un client
 
 Medicaments (
   #id : integer,
