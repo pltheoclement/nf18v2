@@ -83,15 +83,15 @@ Procedures (
 
 Poids (
   mesure : integer,
-  dtSaisie : date,
-  num_dossier => Animaux
-) avec mesure et dtSaisie NOT NULL et mesure>0
+  #dtSaisie : date,
+  #num_dossier => Animaux
+) avec mesure NOT NULL et mesure>0
 
 Taille (
   mesure : integer,
-  dtSaisie : date,
-  num_dossier => Animaux
-) avec mesure et dtSaisie NOT NULL et mesure>0
+  #dtSaisie : date,
+  #num_dossier => Animaux
+) avec mesure NOT NULL et mesure>0
 
 
 Appartenir (
