@@ -23,7 +23,6 @@ class Personnel {
   adresse : text
   tel : numeric
   poste : {veterinaire, assistant}
-  specialite : text
 }
 
 class Medicaments {
