@@ -102,7 +102,7 @@ DossierMed "1" -- "0..n" Consulter
 DossierMed "1" -- "0..n" Traitements
 Animaux "0..n" -- "1" Especes
 Especes "1..n" -- "0..n" Personnel : specialite
-Especes "1..n" -- "0..n" Medicaments
+Especes "1..n" -- "0..n" Medicaments : compatible
 
 
 @enduml
