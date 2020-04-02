@@ -9,7 +9,12 @@ Animaux (
 ) avec nom, dtNaiss, espece et DossierMed NOT NULL
 
 Espèce (
-   #nom : {felin, canide, reptile, rongeur, oiseau, autre}
+    #nom : {felin, canide, reptile, rongeur, oiseau, autre}
+)
+
+Compatible (
+    #espece => Espèce,
+    #medicament => Médicaments
 )
 
 Clients (
@@ -34,7 +39,7 @@ Personnel (
 
 Contraite : Un personnel ne peut pas être un client
 
-Medicaments (
+Médicaments (
   #id : integer,
   molecule : string,
   effets : string
