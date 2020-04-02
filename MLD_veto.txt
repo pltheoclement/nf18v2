@@ -1,20 +1,24 @@
 Animaux (
-  #id : integer,
+  #DossierMed : integer
   nom : string,
   dtNaiss : date,
   numPuce : integer,
   numPasseport : integer,
   espece => Espèce,
-  DossierMed : integer
-) avec nom, dtNaiss, espece et DossierMed NOT NULL
+) avec nom, dtNaiss et espece NOT NULL
 
-Espèce (
+Espèces (
     #nom : {felin, canide, reptile, rongeur, oiseau, autre}
 )
 
 Compatible (
-    #espece => Espèce,
+    #espece => Espèces,
     #medicament => Médicaments
+)
+
+Spécialité (
+    #personnel => Personnel,
+    #espece => Espèces
 )
 
 Clients (
@@ -33,8 +37,7 @@ Personnel (
   dtNaiss : date,
   adresse : string,
   tel : integer,
-  poste : {veterinaire || assistant},
-  specialite => Espèce
+  poste : {veterinaire || assistant}
 ) avec nom, prenom, dtNaiss, adresse, tel et poste NOT NULL
 
 Contraite : Un personnel ne peut pas être un client
@@ -49,7 +52,8 @@ Traitements (
   #id : integer,
   dtDebut : date,
   dtSaisie : date,
-  num_dossier => Animaux.DossierMed
+  num_dossier => Animaux,
+  prescripteur => Personnel
 ) avec dtDebut et dtSaisie NOT NULL
 
 Contrainte : seul un vétérinaire peut prescrire un traitement
@@ -57,55 +61,56 @@ Contrainte : seul un vétérinaire peut prescrire un traitement
 Resultats_analyse (
   #lien : string  ( lien vers fichier ),
   dtSaisie : date,
-  num_dossier => Animaux.DossierMed
+  num_dossier => Animaux
 ) avec dtSaisie NOT NULL
 
 Consulter (
+  #id : integer,
   dateConsult : date,
   observation : string,
   dtSaisie : date,
-  num_dossier => Animaux.DossierMed,
-  animal => Animaux.id,
-  personnel => Personnel.id
+  num_dossier => Animaux,
+  personnel => Personnel
 ) avec dateConsult et dtSaisie NOT NULL
 
 Procedures (
   #id : integer,
   description : string,
   dtSaisie : date,
-  num_dossier => Animaux.DossierMed
+  num_dossier => Animaux,
+  personnel => Personnel
 ) avec description et dtSaisie NOT NULL
 
 Poids (
   mesure : integer,
   dtSaisie : date,
-  num_dossier => Animaux.DossierMed
+  num_dossier => Animaux
 ) avec mesure et dtSaisie NOT NULL et mesure>0
 
 Taille (
   mesure : integer,
   dtSaisie : date,
-  num_dossier => Animaux.DossierMed
+  num_dossier => Animaux
 ) avec mesure et dtSaisie NOT NULL et mesure>0
 
 
 Appartenir (
+  #animal => Animaux,
+  #client => Client,
   debut_periode : date,
-  fin_periode : date,
-  animal=> Animaux.id,
-  client=> Client.id
+  fin_periode : date
 ) avec debut_periode et fin_periode NOT NULL
 
 Prise_medicament (
+  #traitement=> Traitements,
+  #médicament=> Médicaments,
   duree : integer,
-  quantite_jour : integer,
-  traitement=> Traitements.id,
-  médicament=> Médicaments.id
-) avec duree et quantite_jour NOT NULL et (dure > 0 et quantite_jour > 0)
+  quantite_jour : integer
+) avec duree et quantite_jour NOT NULL et (duree > 0 et quantite_jour > 0)
 
 Suivre (
+  #animal => Animaux,
+  #personnel => Personnel,
   debut_suivi : date,
-  fin_suivi : date,
-  animal => Animaux.id,
-  personnel => Personnel.id
+  fin_suivi : date
 ) avec debut_suivi et fin_suivi NOT NULL
