@@ -103,7 +103,7 @@ Appartenir (
 
 Prise_medicament (
   #traitement=> Traitements,
-  #médicament=> Médicaments,
+  #medicament=> Médicaments,
   duree : integer,
   quantite_jour : integer
 ) avec duree et quantite_jour NOT NULL et (duree > 0 et quantite_jour > 0)
