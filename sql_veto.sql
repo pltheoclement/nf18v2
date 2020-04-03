@@ -133,10 +133,10 @@ CREATE TABLE Prise_medicament (
   duree INTEGER NOT NULL CHECK (duree > 0),
   quantite_jour INTEGER NOT NULL CHECK (quantite_jour > 0),
   traitement INTEGER,
-  médicament INTEGER,
+  medicament INTEGER,
   FOREIGN KEY (traitement) REFERENCES Traitements(id),
-  FOREIGN KEY (médicament) REFERENCES Médicaments(id),
-  PRIMARY KEY (traitement,médicament)
+  FOREIGN KEY (medicament) REFERENCES Médicaments(id),
+  PRIMARY KEY (traitement,medicament)
 );
 
 CREATE TABLE Suivre (
