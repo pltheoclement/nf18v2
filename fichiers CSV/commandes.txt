@@ -2,10 +2,14 @@ Pour importer la base de données:
 
     \i sql_veto.sql
     
-Insérer les données dans le tableau des espèces:
+Insérer les données dans le tableau espèces:
 
      \copy espèces (nom) FROM 'especes.csv' WITH CSV DELIMITER ';' QUOTE '"'
      
-Insérer les données dans le tableau des personnel:
+Insérer les données dans le tableau personnel:
 
     \copy personnel FROM 'personnel.csv' WITH DELIMITER AS ';' CSV HEADER
+
+Insérer les données dans le tableau médicaments:
+
+    \copy médicaments FROM 'medicaments.csv' WITH DELIMITER AS ';' CSV HEADER
