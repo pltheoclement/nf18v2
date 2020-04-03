@@ -9,3 +9,5 @@ Groupe 6
 *  Uriel Zuñiga
 *  Steven Perez
 *  Pierre Tetard
+
+Le fichier **commandes.txt** contient les commandes pour créer la base de données et faire des insertions de données dans certaines tables
