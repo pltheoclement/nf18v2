@@ -21,4 +21,9 @@ Insérer les données dans le tableau spécialité:
 Insérer les données dans le tableau animaux:
     
     \copy animaux FROM 'animaux.csv' WITH DELIMITER AS ';' CSV HEADER
+    
+Insérer les données dans le tableau clients: 
+    
+    \copy clients FROM 'clients.csv' WITH DELIMITER AS ';' CSV HEADER
+
 
