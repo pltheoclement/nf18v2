@@ -12,4 +12,4 @@ Groupe 6
 
 Le fichier **commandes.txt** contient les commandes pour créer la base de données et faire des insertions de données dans certaines tables
 
-Les données des médicaments ont été extraites de la page: [](http://www.ircp.anmv.anses.fr/)
+Les données des médicaments ont été extraites de la page: [medicaments](http://www.ircp.anmv.anses.fr/)
