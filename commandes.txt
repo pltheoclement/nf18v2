@@ -1,0 +1,9 @@
+
+Pour importer la base de données:
+
+    \i sql_veto.sql
+    
+Insérer les données dans le tableau des espèces:
+
+     \copy espèces (nom) FROM 'especes.csv' WITH CSV DELIMITER ';' QUOTE '"'
+     
