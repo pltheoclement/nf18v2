@@ -17,4 +17,8 @@ Insérer les données dans le tableau médicaments:
 Insérer les données dans le tableau spécialité:
 
     \copy spécialité FROM 'specialite.csv' WITH DELIMITER AS ';' CSV HEADER
+    
+Insérer les données dans le tableau animaux:
+    
+    \copy animaux FROM 'animaux.csv' WITH DELIMITER AS ';' CSV HEADER
 
