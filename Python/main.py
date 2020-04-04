@@ -33,12 +33,12 @@ option = 0
 while not sortir:
  
     print ("1. Ajouter un Animal")
-    print ("2. Afficher la liste des Animaux")
-    print ("3. Statistiques des Animaux traites ")
-    print ("4. Statistiques des medicaments")
-    print ("5. Ajouter un client")
-    print ("6. Ajouter un personnel")
-    print ("7. Ajouter un medicament")
+    print ("2. Ajouter un client")
+    print ("3. Ajouter un personnel")
+    print ("4. Ajouter un medicament")
+    print ("5. Afficher la liste des Animaux")
+    print ("6. Statistiques des Animaux traites")
+    print ("7. Statistiques des medicaments")
     print ("8. Option 8")
     print ("9. Option 9")
     print ("10. Option 10")
@@ -52,22 +52,22 @@ while not sortir:
         print ("Ajouter un Animal ")
         ajout_animal(HOST, DATABASE, USER, PASSWORD)
     elif option == 2:
-        print ("Afficher Animaux:")
+        print ("Ajouter un client")
         afficher_animaux(HOST, DATABASE, USER, PASSWORD)
     elif option == 3:
-        print ("Statistiques des Animaux traites")
+        print ("Ajouter un personnel")
         statistiques_animaux(HOST, DATABASE, USER, PASSWORD)
     elif option == 4:
-        print ("Statistiques des medicaments")
+        print ("Ajouter un medicament")
         afficher_medicaments(HOST, DATABASE, USER, PASSWORD)
     elif option == 5:
-        print ("Ajouter un client")
+        print ("Afficher la liste des animaux")
         ajout_client(HOST, DATABASE, USER, PASSWORD)
     elif option == 6:
-        print ("Ajouter  Personnel ")
+        print ("Statistiques des animaux traites ")
         ajout_personnel(HOST, DATABASE, USER, PASSWORD)
     elif option == 7:
-        print ("Ajouter un medicament ")
+        print ("statistiques des medicaments")
         ajout_medicament(HOST, DATABASE, USER, PASSWORD)
     elif option == 8:
         print ("Option 8")
