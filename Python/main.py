@@ -8,6 +8,7 @@ from ajout_personnel import
 from ajout_medicament import *
 from afficher_medicament import *
 from supprimer_personnel import*
+from saisir_taille import *
 
 HOST = "tuxa.sme.utc"
 USER = "********"
@@ -40,7 +41,7 @@ while not sortir:
     print ("5. Afficher la liste des Animaux")
     print ("6. Statistiques des Animaux traites")
     print ("7. Statistiques des medicaments")
-    print ("8. Option 8")
+    print ("8. Saisir la taille d'un animal")
     print ("9. Supprimer personnel")
     print ("10. Option 10")
     print ("11. Sortir")
@@ -71,7 +72,8 @@ while not sortir:
         print ("statistiques des medicaments")
         ajout_medicament(HOST, DATABASE, USER, PASSWORD)
     elif option == 8:
-        print ("Option 8")
+        print ("Saisir la taille d'un animal")
+        saisir_taille(HOST, DATABASE, USER, PASSWORD)
     elif option == 9:
         print ("9. Supprimer personnel")
         supprimer_personnel(HOST, DATABASE, USER, PASSWORD)
