@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import psycopg2
+import ajout_animal
 
 HOST = "tuxa.sme.utc"
 USER = "********"
@@ -70,3 +71,5 @@ while not sortir:
         print ("Entrez un nombre entre 1 et 10")
  
 print ("Fin")
+
+conn.close()
