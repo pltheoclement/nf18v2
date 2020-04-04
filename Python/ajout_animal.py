@@ -1,20 +1,11 @@
 def ajout_animal(HOST, DATABASE, USER, PASSWORD):
 
     import psycopg2
-    
+
     conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
     cur = conn.cursor()
 
-    erreur = False
-    while (not erreur):
-        try:
-            num_dossier = int(input("Numéro de dossier médical : "))
-            erreur = True
-        except:
-            print ("Erreur, veuillez entrer un entier positif")
-
     nom = input("Nom : ")
-
 
     print ("Date de naissance :")
     erreur = False
@@ -59,7 +50,7 @@ def ajout_animal(HOST, DATABASE, USER, PASSWORD):
             print ("Erreur, veuillez entrer une valeur parmi celles proposées")
 
     try:
-        sql = "INSERT INTO animaux VALUES (%i, '%s', '%i-%i-%i', %i, %i, '%s')"% (num_dossier, nom, ANaiss, MNaiss, JNaiss, numPuce, numPasseport, espece)
+        sql = "INSERT INTO animaux (nom, dtNaiss, numPuce, numPasseport, espece) VALUES ('%s', '%i-%i-%i', %i, %i, '%s')"% (nom, ANaiss, MNaiss, JNaiss, numPuce, numPasseport, espece)
         cur.execute(sql)
         conn.commit()
     except psycopg2.Error as e:
