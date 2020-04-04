@@ -2,6 +2,7 @@
 
 import psycopg2
 from ajout_animal import *
+from afficher_animaux import *
 
 HOST = "tuxa.sme.utc"
 USER = "********"
@@ -28,9 +29,9 @@ option = 0
 while not sortir:
  
     print ("1. Ajouter un Animal")
-    print ("2. Option 2")
-    print ("3. Option 3")
-    print ("4. Option 4")
+    print ("2. Afficher la liste des Animaux")
+    print ("3. Statistiques des Animaux traites ")
+    print ("4. Statistiques des medicaments")
     print ("5. Option 5")
     print ("6. Option 6")
     print ("7. Option 7")
@@ -47,11 +48,12 @@ while not sortir:
         print ("Ajouter un Animal ")
         ajout_animal(HOST, DATABASE, USER, PASSWORD)
     elif option == 2:
-        print ("Option 2")
+        print ("Afficher Animaux:")
+        afficher_animaux(HOST, DATABASE, USER, PASSWORD)
     elif option == 3:
-        print ("Option 3")
+        print ("Statistiques des Animaux traites")
     elif option == 4:
-        print ("Option 4")
+        print ("Statistiques des medicaments")
     elif option == 5:
         print ("Option 5")
     elif option == 6:
