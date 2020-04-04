@@ -12,7 +12,7 @@ Insérer les données dans le tableau personnel:
 
 Insérer les données dans le tableau médicaments:
 
-    \copy médicaments FROM 'medicaments.csv' WITH DELIMITER AS ';' CSV HEADER
+    \copy médicaments(molecule, effets) FROM 'medicaments.csv' WITH DELIMITER AS ';' CSV HEADER
     
 Insérer les données dans le tableau spécialité:
 
