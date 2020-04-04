@@ -20,14 +20,14 @@ Compatible (
     #medicament => Médicaments
 )
 
-On a une relation N:M entre Espèces et Médicaments donc on doit créer une nouvelle class : Compatbile dont la clé sera (espece,medicament) référant aux deux tables.
+On a une relation N:M entre Espèces et Médicaments donc on doit créer une nouvelle classe : Compatbile dont la clé sera (espece,medicament) référant aux deux tables.
 
 Spécialité (
     #personnel => Personnel,
     #espece => Espèces
 )
 
-On a une relation N:M entre Personnel et Espèces donc on doit créer une nouvelle class : Spécialité dont la clé sera (personnel,espece) référant aux deux tables.
+On a une relation N:M entre Personnel et Espèces donc on doit créer une nouvelle classe : Spécialité dont la clé sera (personnel,espece) référant aux deux tables.
 
 Clients (
   #id : integer,
@@ -119,10 +119,12 @@ Choix de mettre la clé primaire (dtSaisie,num_dossier) afin de distinguer les d
 
 Appartenir (
   #animal => Animaux,
-  #client => Client,
+  #client => Clients,
   debut_periode : date,
   fin_periode : date
 ) avec debut_periode et fin_periode NOT NULL
+
+On a une relation N:M entre Animaux et Clients donc on doit créer une nouvelle classe : Appartenir dont la clé primaire sera (animal,client) référant aux deux tables.
 
 Prise_medicament (
   #traitement=> Traitements,
@@ -131,9 +133,13 @@ Prise_medicament (
   quantite_jour : integer
 ) avec duree et quantite_jour NOT NULL et (duree > 0 et quantite_jour > 0)
 
+On a une relation N:M entre Traitements et Médicaments donc on doit créer une nouvelle classe : Prise_medicament dont la clé primaire sera (traitement,medicament) référant aux deux tables.
+
 Suivre (
   #animal => Animaux,
   #personnel => Personnel,
   debut_suivi : date,
   fin_suivi : date
 ) avec debut_suivi et fin_suivi NOT NULL
+
+On a une relation N:M entre Animaux et Personnel donc on doit créer une nouvelle classe : Suivre dont la clé primaire sera (animal,personnel) référant aux deux tables.
