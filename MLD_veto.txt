@@ -20,14 +20,14 @@ Compatible (
     #medicament => Médicaments
 )
 
-On a une relation N:M entre Espèces et Médicaments donc on doit créer une nouvelle classe : Compatbile dont la clé sera (espece,medicament) référant aux deux tables.
+On a une relation N:M entre Espèces et Médicaments donc on doit créer une nouvelle classe : Compatible, dont la clé sera (espece,medicament) référant aux deux tables.
 
 Spécialité (
     #personnel => Personnel,
     #espece => Espèces
 )
 
-On a une relation N:M entre Personnel et Espèces donc on doit créer une nouvelle classe : Spécialité dont la clé sera (personnel,espece) référant aux deux tables.
+On a une relation N:M entre Personnel et Espèces donc on doit créer une nouvelle classe : Spécialité, dont la clé sera (personnel,espece) référant aux deux tables.
 
 Clients (
   #id : integer,
@@ -38,7 +38,7 @@ Clients (
   tel : integer
 ) avec nom, prenom, dtNaiss, adresse et tel NOT NULL
 
-Création d'un id pour la table Clients qui servira de clé primaire afin de distinguer les différents clients car il est possible que deux clients aient en commun plusieurs des attributs de la classe.
+Création d'un id pour la table Clients, qui servira de clé primaire afin de distinguer les différents clients car il est possible que deux clients aient en commun plusieurs des attributs de la classe.
 
 Personnel (
   #id : integer,
@@ -47,10 +47,10 @@ Personnel (
   dtNaiss : date,
   adresse : string,
   tel : integer,
-  poste : {veterinaire || assistant}
+  poste : {veterinaire,assistant}
 ) avec nom, prenom, dtNaiss, adresse, tel et poste NOT NULL
 
-Création d'un id pour la table Personnel qui servira de clé primaire afin de distinguer les différents membres du personnel car il est possible que deux membres aient en commun plusieurs des attributs de la classe.
+Création d'un id pour la table Personnel, qui servira de clé primaire afin de distinguer les différents membres du personnel car il est possible que deux membres aient en commun plusieurs des attributs de la classe.
 Contraite : Un personnel ne peut pas être un client
 
 Médicaments (
@@ -59,7 +59,7 @@ Médicaments (
   effets : string
 ) avec molecule et effets NOT NULL
 
-Création d'un id pour la table Médicaments qui servira de clé primaire afin de distinguer les différents médicaments qui peuvent potentiellement avoir la même molécule ou les mêmes effets.
+Création d'un id pour la table Médicaments, qui servira de clé primaire afin de distinguer les différents médicaments qui peuvent potentiellement avoir la même molécule ou les mêmes effets.
 
 Traitements (
   #id : integer,
@@ -69,16 +69,16 @@ Traitements (
   prescripteur => Personnel
 ) avec dtDebut et dtSaisie NOT NULL
 
-Création d'un id pour la table Traitements qui servira de clé primaire afin de distinguer les différents traitements car il est possible que deux traitements aient en commun plusieurs des attributs de la classe.
+Création d'un id pour la table Traitements, qui servira de clé primaire afin de distinguer les différents traitements car il est possible que deux traitements aient en commun plusieurs des attributs de la classe.
 Contrainte : seul un vétérinaire peut prescrire un traitement
 
 Resultats_analyse (
-  #lien : string ,
+  #lien : string,
   dtSaisie : date,
   num_dossier => Animaux
 ) avec dtSaisie NOT NULL
 
-Choix de mettre le lien en clé primaire car les résultats auront des liens différents ce qui permettra de différencier tout les résultats d'analyse de tous les animaux.
+Choix de mettre le lien en clé primaire car les résultats auront des liens différents ce qui permettra de différencier tous les résultats d'analyse de tous les animaux.
 
 Consulter (
   #id : integer,
@@ -89,7 +89,7 @@ Consulter (
   personnel => Personnel
 ) avec dateConsult et dtSaisie NOT NULL
 
-Création d'un id pour la table Consulter qui servira de clé primaire afin de distinguer les différentes consultations car il est possible que deux consultations aient en commun plusieurs des attributs de la classe.
+Création d'un id pour la table Consulter, qui servira de clé primaire afin de distinguer les différentes consultations car il est possible que deux consultations aient en commun plusieurs des attributs de la classe.
 
 Procedures (
   #id : integer,
@@ -99,7 +99,7 @@ Procedures (
   personnel => Personnel
 ) avec description et dtSaisie NOT NULL
 
-Création d'un id pour la table Procedures qui servira de clé primaire afin de distinguer les différentes procédures car il est possible que deux procédures aient en commun plusieurs des attributs de la classe.
+Création d'un id pour la table Procedures, qui servira de clé primaire afin de distinguer les différentes procédures car il est possible que deux procédures aient en commun plusieurs des attributs de la classe.
 
 Poids (
   mesure : integer,
@@ -124,7 +124,7 @@ Appartenir (
   fin_periode : date
 ) avec debut_periode et fin_periode NOT NULL
 
-On a une relation N:M entre Animaux et Clients donc on doit créer une nouvelle classe : Appartenir dont la clé primaire sera (animal,client) référant aux deux tables.
+On a une relation N:M entre Animaux et Clients donc on doit créer une nouvelle classe : Appartenir, dont la clé primaire sera (animal,client) référant aux deux tables.
 
 Prise_medicament (
   #traitement=> Traitements,
@@ -133,7 +133,7 @@ Prise_medicament (
   quantite_jour : integer
 ) avec duree et quantite_jour NOT NULL et (duree > 0 et quantite_jour > 0)
 
-On a une relation N:M entre Traitements et Médicaments donc on doit créer une nouvelle classe : Prise_medicament dont la clé primaire sera (traitement,medicament) référant aux deux tables.
+On a une relation N:M entre Traitements et Médicaments donc on doit créer une nouvelle classe : Prise_medicament, dont la clé primaire sera (traitement,medicament) référant aux deux tables.
 
 Suivre (
   #animal => Animaux,
@@ -142,4 +142,4 @@ Suivre (
   fin_suivi : date
 ) avec debut_suivi et fin_suivi NOT NULL
 
-On a une relation N:M entre Animaux et Personnel donc on doit créer une nouvelle classe : Suivre dont la clé primaire sera (animal,personnel) référant aux deux tables.
+On a une relation N:M entre Animaux et Personnel donc on doit créer une nouvelle classe : Suivre, dont la clé primaire sera (animal,personnel) référant aux deux tables.
