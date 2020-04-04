@@ -1,14 +1,14 @@
 @startuml
 hide circle
 
-classe Animaux {
+class Animaux {
   nom : text
   dtNaiss : date
   numPuce : numeric [0..1]
   numPasseport : numeric [0..1]
 }
 
-classe Clients {
+class Clients {
   nom : text
   prenom : text
   dtNaiss : date
@@ -16,7 +16,7 @@ classe Clients {
   tel : numeric
 }
 
-classe Personnel {
+class Personnel {
   nom : text
   prenom : text
   dtNaiss : date
@@ -25,62 +25,62 @@ classe Personnel {
   poste : {veterinaire, assistant}
 }
 
-classe Medicaments {
+class Medicaments {
   molecule : text
   effets : text
 }
 
-classe Traitements {
+class Traitements {
   dtDebut : date
   dtSaisie : date
 }
 
-classe Resultats_analyse {
+class Resultats_analyse {
   lien : text {key}
   dtSaisie
 }
 
-classe Consulter {
+class Consulter {
   dateConsult : date
   observation : text
   dtSaisie : date
 }
 
-classe Procedures {
+class Procedures {
   description : text
   dtSaisie : date
 }
 
-classe Poids {
+class Poids {
   mesure : numeric
   dtSaisie : date
 }
 
-classe Taille {
+class Taille {
   mesure : numeric
   dtSaisie : date
 }
 
-classe Appartenir {
+class Appartenir {
   debut_periode : date
   fin_periode : date
 }
 
-classe Prise_medicament {
+class Prise_medicament {
   duree : numeric
   quantite_jour : numeric
 }
 
-classe Suivre {
+class Suivre {
   debut_suivi : date
   fin_suivi : date
 }
 
-classe Especes {
+class Especes {
   nom : text {key}
 }
 
-classe DossierMed {
+class DossierMed {
 }
 
 
