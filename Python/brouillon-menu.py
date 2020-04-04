@@ -1,15 +1,13 @@
 #!/usr/bin/python3
 
 import psycopg2
-import ajout_animal
+from ajout_animal import *
 
 HOST = "tuxa.sme.utc"
 USER = "********"
 PASSWORD = "********"
 DATABASE = "db********"
 
-conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
- 
 def nombre_entier():
  
     correcto=False
@@ -71,5 +69,3 @@ while not sortir:
         print ("Entrez un nombre entre 1 et 10")
  
 print ("Fin")
-
-conn.close()
