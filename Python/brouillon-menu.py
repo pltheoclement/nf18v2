@@ -52,6 +52,7 @@ while not sortir:
         afficher_animaux(HOST, DATABASE, USER, PASSWORD)
     elif option == 3:
         print ("Statistiques des Animaux traites")
+        statistiques_animaux(HOST, DATABASE, USER, PASSWORD)
     elif option == 4:
         print ("Statistiques des medicaments")
     elif option == 5:
