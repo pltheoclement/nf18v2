@@ -38,7 +38,7 @@ Clients (
   tel : integer
 ) avec nom, prenom, dtNaiss, adresse et tel NOT NULL
 
-Création d'un id pour la table Clients qui servira de clé primaire afin de distinguer les différents clients car il est possible que deux clients ai en commun plusieurs des attributs de la class.
+Création d'un id pour la table Clients qui servira de clé primaire afin de distinguer les différents clients car il est possible que deux clients aient en commun plusieurs des attributs de la classe.
 
 Personnel (
   #id : integer,
@@ -50,7 +50,7 @@ Personnel (
   poste : {veterinaire || assistant}
 ) avec nom, prenom, dtNaiss, adresse, tel et poste NOT NULL
 
-Création d'un id pour la table Personnel qui servira de clé primaire afin de distinguer les différents membres du personnel car il est possible que deux membres ai en commun plusieurs des attributs de la class.
+Création d'un id pour la table Personnel qui servira de clé primaire afin de distinguer les différents membres du personnel car il est possible que deux membres aient en commun plusieurs des attributs de la classe.
 Contraite : Un personnel ne peut pas être un client
 
 Médicaments (
@@ -69,14 +69,16 @@ Traitements (
   prescripteur => Personnel
 ) avec dtDebut et dtSaisie NOT NULL
 
-Création d'un id pour la table Traitements qui servira de clé primaire afin de distinguer les différents traitements qui peuvent être donnés et saisis à une même date, au même animal et par le même personnel soignant.
+Création d'un id pour la table Traitements qui servira de clé primaire afin de distinguer les différents traitements car il est possible que deux traitements aient en commun plusieurs des attributs de la classe.
 Contrainte : seul un vétérinaire peut prescrire un traitement
 
 Resultats_analyse (
-  #lien : string  ( lien vers fichier ),
+  #lien : string ,
   dtSaisie : date,
   num_dossier => Animaux
 ) avec dtSaisie NOT NULL
+
+Choix de mettre le lien en clé primaire car les résultats auront des liens différents ce qui permettra de différencier tout les résultats d'analyse de tous les animaux.
 
 Consulter (
   #id : integer,
@@ -87,6 +89,8 @@ Consulter (
   personnel => Personnel
 ) avec dateConsult et dtSaisie NOT NULL
 
+Création d'un id pour la table Consulter qui servira de clé primaire afin de distinguer les différentes consultations car il est possible que deux consultations aient en commun plusieurs des attributs de la classe.
+
 Procedures (
   #id : integer,
   description : string,
@@ -95,11 +99,15 @@ Procedures (
   personnel => Personnel
 ) avec description et dtSaisie NOT NULL
 
+Création d'un id pour la table Procedures qui servira de clé primaire afin de distinguer les différentes procédures car il est possible que deux procédures aient en commun plusieurs des attributs de la classe.
+
 Poids (
   mesure : integer,
   #dtSaisie : date,
   #num_dossier => Animaux
 ) avec mesure NOT NULL et mesure>0
+
+Choix de mettre la clé primaire (dtSaisie,num_dossier) afin de distinguer les différents poids des animaux, car il se peut que deux animaux aient le même poids, et qu'un même animal change de poids en fonction de la date.
 
 Taille (
   mesure : integer,
@@ -107,6 +115,7 @@ Taille (
   #num_dossier => Animaux
 ) avec mesure NOT NULL et mesure>0
 
+Choix de mettre la clé primaire (dtSaisie,num_dossier) afin de distinguer les différentes tailles des animaux, car il se peut que deux animaux aient la même taille, et qu'un même animal change de taille en fonction de la date.
 
 Appartenir (
   #animal => Animaux,
