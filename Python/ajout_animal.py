@@ -20,7 +20,7 @@ def ajout_animal(HOST, DATABASE, USER, PASSWORD):
     erreur = False
     while (not erreur):
         try:
-            JNaiss = int(input("    Mois : "))
+            JNaiss = int(input("    Jour : "))
             MNaiss = int(input("    Mois : "))
             ANaiss = int(input("    Année : "))
             erreur = True
