@@ -20,6 +20,8 @@ Le fichier **MLD_veto.txt** contient la représention des données de l'exercice
 
 Le fichier **sql_veto_sql** contient la création de toutes les tables utiles à la base de données en requêtes SQL.
 
-Le fichier **fichiers CSV** contient les exemples de données insérées grâce à plusieurs fichiers .csv 
+Le fichier **fichiers CSV** contient les documents avec les exemples de données insérées dans la base de données.
+
+Le fichier **Python** contient le menu avec les différentes fonctionnalités de la base de données qui ont été implémentées.
 
 Les données des médicaments ont été extraites de la page: [medicaments](http://www.ircp.anmv.anses.fr/)
