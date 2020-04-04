@@ -8,7 +8,7 @@ Insérer les données dans le tableau espèces:
      
 Insérer les données dans le tableau personnel:
 
-    \copy personnel FROM 'personnel.csv' WITH DELIMITER AS ';' CSV HEADER
+    \copy personnel(nom, prenom, dtnaiss, adresse, tel, poste) FROM 'personnel.csv' WITH DELIMITER AS ';' CSV HEADER
 
 Insérer les données dans le tableau médicaments:
 
