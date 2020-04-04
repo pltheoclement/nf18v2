@@ -1,4 +1,13 @@
 #!/usr/bin/python3
+
+import psycopg2
+
+HOST = "tuxa.sme.utc"
+USER = "********"
+PASSWORD = "********"
+DATABASE = "db********"
+
+conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
  
 def nombre_entier():
  
