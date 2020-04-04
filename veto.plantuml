@@ -1,14 +1,14 @@
 @startuml
 hide circle
 
-class Animaux {
+classe Animaux {
   nom : text
   dtNaiss : date
   numPuce : numeric [0..1]
   numPasseport : numeric [0..1]
 }
 
-class Clients {
+classe Clients {
   nom : text
   prenom : text
   dtNaiss : date
@@ -16,7 +16,7 @@ class Clients {
   tel : numeric
 }
 
-class Personnel {
+classe Personnel {
   nom : text
   prenom : text
   dtNaiss : date
@@ -25,62 +25,62 @@ class Personnel {
   poste : {veterinaire, assistant}
 }
 
-class Medicaments {
+classe Medicaments {
   molecule : text
   effets : text
 }
 
-class Traitements {
+classe Traitements {
   dtDebut : date
   dtSaisie : date
 }
 
-class Resultats_analyse {
+classe Resultats_analyse {
   lien : text {key}
   dtSaisie
 }
 
-class Consulter {
+classe Consulter {
   dateConsult : date
   observation : text
   dtSaisie : date
 }
 
-class Procedures {
+classe Procedures {
   description : text
   dtSaisie : date
 }
 
-class Poids {
+classe Poids {
   mesure : numeric
   dtSaisie : date
 }
 
-class Taille {
+classe Taille {
   mesure : numeric
   dtSaisie : date
 }
 
-class Appartenir {
+classe Appartenir {
   debut_periode : date
   fin_periode : date
 }
 
-class Prise_medicament {
+classe Prise_medicament {
   duree : numeric
   quantite_jour : numeric
 }
 
-class Suivre {
+classe Suivre {
   debut_suivi : date
   fin_suivi : date
 }
 
-class Especes {
+classe Especes {
   nom : text {key}
 }
 
-class DossierMed {
+classe DossierMed {
 }
 
 
@@ -109,20 +109,20 @@ Especes "1..n" -- "0..n" Medicaments : compatible
 
 Contraintes:
 
-Pour la class "Animaux":
+Pour la classe "Animaux":
   nom : NOT NULL
   numPuce : UNIQUE
   numPasseport : UNIQUE
   dtNaiss : NOT NULL
 
-Pour la class "Clients"
+Pour la classe "Clients"
   nom : NOT NULL
   prenom : NOT NULL
   dtNaiss : NOT NULL
   adresse : NOT NULL
   tel : NOT NULL
   
-Pour la class "Personnel"
+Pour la classe "Personnel"
   nom : NOT NULL
   prenom : NOT NULL
   dtNaiss : NOT NULL
@@ -130,41 +130,41 @@ Pour la class "Personnel"
   tel : NOT NULL
   poste : NOT NULL
 
-Pour la class "Medicaments"
+Pour la classe "Medicaments"
   molecule : NOT NULL
   effets : NOT NULL
   
-Pour la class "Traitements"
+Pour la classe "Traitements"
   dtDebut : date
   dtSaisie : date
   
-Pour la class "Resultats_analyse"
+Pour la classe "Resultats_analyse"
     dtSaisie: NOT NULL
     
-Pour la class "Consulter"
+Pour la classe "Consulter"
   dateConsult : NOT NULL
   dtSaisie : NOT NULL
 
-Pour la class "Procedures"
+Pour la classe "Procedures"
   description : NOT NULL
   dtSaisie : NOT NULL
 
-Pour la class "Poids"
+Pour la classe "Poids"
   mesure : NOT NULL et mesure > 0
   dtSaisie : NOT NULL
   
-Pour la class "Taille"
+Pour la classe "Taille"
   mesure : NOT NULL et mesure > 0
   dtSaisie : NOT NULL
   
-Pour la class "Appartenir" 
+Pour la classe "Appartenir" 
   debut_periode : NOT NULL
   fin_periode : NOT NULL
 
-Pour la class "Prise_medicament" 
+Pour la classe "Prise_medicament" 
   duree : NOT NULL duree > 0
   quantite_jour : NOT NULL quantite_jour > 0
   
-Pour la class "Suivre"
+Pour la classe "Suivre"
   debut_suivi : NOT NULL
   fin_suivi : NOT NULL
