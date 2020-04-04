@@ -7,6 +7,7 @@ from ajouter_client import *
 from ajout_personnel import
 from ajout_medicament import *
 from afficher_medicament import *
+from supprimer_personnel import*
 
 HOST = "tuxa.sme.utc"
 USER = "********"
@@ -40,7 +41,7 @@ while not sortir:
     print ("6. Statistiques des Animaux traites")
     print ("7. Statistiques des medicaments")
     print ("8. Option 8")
-    print ("9. Option 9")
+    print ("9. Supprimer personnel")
     print ("10. Option 10")
     print ("11. Sortir")
      
@@ -72,7 +73,8 @@ while not sortir:
     elif option == 8:
         print ("Option 8")
     elif option == 9:
-        print ("Option 9")
+        print ("9. Supprimer personnel")
+        supprimer_personnel(HOST, DATABASE, USER, PASSWORD)
     elif option == 10:
         print ("Option 10")
     elif option == 11:
