@@ -4,7 +4,7 @@ Pour importer la base de données:
     
 Insérer les données dans le tableau espèces:
 
-     \copy espèces (nom) FROM 'especes.csv' WITH CSV DELIMITER ';' QUOTE '"'
+     \copy espèces FROM 'especes.csv' WITH DELIMITER AS ';' CSV HEADER
      
 Insérer les données dans le tableau personnel:
 
