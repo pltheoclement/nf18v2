@@ -1,11 +1,11 @@
-id;molecule;effets
-1;ABCEDYL GA;Médicament homéopathique traditionnellement utilisé en présence d'affections cutanées suppuratives.
-2;ACTI-METHOXINE;Traitement des infections respiratoires et digestives dues à  des germes sensibles à  la sulfadiméthoxine.
-3;ALAZOL;Traitement des infestations à  Trichomonas gallinae ou Trichomonas columbae.
-4;CALCIVITOL;Prévention et traitement des hypocalcémies et/ou des hypomagnésiémies et/ou des hypophosphatémies telles que : fièvre vitulaire, parésies péri-partum, tétanie d'herbage, éclampsie.
-5;FELIGASTRYL;Traitement de l'obstruction intestinale due aux poils.
-6;FELIPIL;Traitement de l'hypersexualité.
-7;FINADYNE;Traitement de l'inflammation et soulagement de la douleur des affections musculaires, squelettiques et de la douleur associée à  la colique.
-8;LACTOLYTE;Complément de la réhydratation par voie veineuse.
-9;NAQUADEM SOLUTION;Traitement des oedèmes.
-10;TAKTIC;Traitement des infections de plaies superficielles causées par des germes sensibles au thiamphénicol.
+molecule;effets
+ABCEDYL GA;Médicament homéopathique traditionnellement utilisé en présence d'affections cutanées suppuratives.
+ACTI-METHOXINE;Traitement des infections respiratoires et digestives dues à  des germes sensibles à  la sulfadiméthoxine.
+ALAZOL;Traitement des infestations à  Trichomonas gallinae ou Trichomonas columbae.
+CALCIVITOL;Prévention et traitement des hypocalcémies et/ou des hypomagnésiémies et/ou des hypophosphatémies telles que : fièvre vitulaire, parésies péri-partum, tétanie d'herbage, éclampsie.
+FELIGASTRYL;Traitement de l'obstruction intestinale due aux poils.
+FELIPIL;Traitement de l'hypersexualité.
+FINADYNE;Traitement de l'inflammation et soulagement de la douleur des affections musculaires, squelettiques et de la douleur associée à  la colique.
+LACTOLYTE;Complément de la réhydratation par voie veineuse.
+NAQUADEM SOLUTION;Traitement des oedèmes.
+TAKTIC;Traitement des infections de plaies superficielles causées par des germes sensibles au thiamphénicol.
