@@ -7,19 +7,27 @@ Animaux (
   espece => Espèce,
 ) avec nom, dtNaiss et espece NOT NULL
 
+DossierMed en clé primaire car chaque animal aura son propre dossier unique et pourra être différencié des autres avec celui-ci.
+
 Espèces (
     #nom : {felin, canide, reptile, rongeur, oiseau, autre}
 )
+
+Espèces ne contient que l'attribut nom, c'est donc la clé primaire qui permet de différencier les espèces.
 
 Compatible (
     #espece => Espèces,
     #medicament => Médicaments
 )
 
+On a une relation N:M entre Espèces et Médicaments donc on doit créer une nouvelle class : Compatbile dont la clé sera (espece,medicament) référant aux deux tables.
+
 Spécialité (
     #personnel => Personnel,
     #espece => Espèces
 )
+
+On a une relation N:M entre Personnel et Espèces donc on doit créer une nouvelle class : Spécialité dont la clé sera (personnel,espece) référant aux deux tables.
 
 Clients (
   #id : integer,
@@ -29,6 +37,8 @@ Clients (
   adresse : string,
   tel : integer
 ) avec nom, prenom, dtNaiss, adresse et tel NOT NULL
+
+Création d'un id pour la table Clients qui servira de clé primaire afin de distinguer les différents clients car il est possible que deux clients ai en commun plusieurs des attributs de la class.
 
 Personnel (
   #id : integer,
@@ -40,6 +50,7 @@ Personnel (
   poste : {veterinaire || assistant}
 ) avec nom, prenom, dtNaiss, adresse, tel et poste NOT NULL
 
+Création d'un id pour la table Personnel qui servira de clé primaire afin de distinguer les différents membres du personnel car il est possible que deux membres ai en commun plusieurs des attributs de la class.
 Contraite : Un personnel ne peut pas être un client
 
 Médicaments (
@@ -47,6 +58,8 @@ Médicaments (
   molecule : string,
   effets : string
 ) avec molecule et effets NOT NULL
+
+Création d'un id pour la table Médicaments qui servira de clé primaire afin de distinguer les différents médicaments qui peuvent potentiellement avoir la même molécule ou les mêmes effets.
 
 Traitements (
   #id : integer,
@@ -56,6 +69,7 @@ Traitements (
   prescripteur => Personnel
 ) avec dtDebut et dtSaisie NOT NULL
 
+Création d'un id pour la table Traitements qui servira de clé primaire afin de distinguer les différents traitements qui peuvent être donnés et saisis à une même date, au même animal et par le même personnel soignant.
 Contrainte : seul un vétérinaire peut prescrire un traitement
 
 Resultats_analyse (
