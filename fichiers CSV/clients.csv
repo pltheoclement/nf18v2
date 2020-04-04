@@ -1,5 +1,5 @@
-id;nom;prenom;dtnaiss;adresse;tel
-1;Ledoux;Matteo;12-02-1999;18 rue Scotch, Paris 65000;66454878
-2;Zuniga;Uriel;15-01-1999;6 B Winston Churchil, Compiègne 60200;55487897
-3;Perez;Steven;11-12-2000;2 Bis Jalapango, Bordeaux 31548;787785445
-4;Petit;Thomas;22-12-1989;22 Walter Walter , Paris 63200;487854655
+nom;prenom;dtnaiss;adresse;tel
+Ledoux;Matteo;12-02-1999;18 rue Scotch, Paris 65000;66454878
+Zuniga;Uriel;15-01-1999;6 B Winston Churchil, Compiègne 60200;55487897
+Perez;Steven;11-12-2000;2 Bis Jalapango, Bordeaux 31548;787785445
+Petit;Thomas;22-12-1989;22 Walter Walter , Paris 63200;487854655
