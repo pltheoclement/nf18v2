@@ -27,7 +27,7 @@ option = 0
  
 while not sortir:
  
-    print ("1. Option 1")
+    print ("1. Ajouter un Animal")
     print ("2. Option 2")
     print ("3. Option 3")
     print ("4. Option 4")
@@ -44,7 +44,8 @@ while not sortir:
     option = nombre_entier()
  
     if option == 1:
-        print ("Option 1")
+        print ("Ajouter un Animal ")
+        ajout_animal(HOST, DATABASE, USER, PASSWORD)
     elif option == 2:
         print ("Option 2")
     elif option == 3:
