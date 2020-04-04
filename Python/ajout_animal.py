@@ -1,5 +1,8 @@
-def ajout_animal():
+def ajout_animal(HOST, DATABASE, USER, PASSWORD):
 
+    import psycopg2
+    
+    conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
     cur = conn.cursor()
 
     erreur = False
@@ -62,3 +65,5 @@ def ajout_animal():
     except psycopg2.Error as e:
         conn.rollback()
         print ("Erreur, message système : ", e)
+
+    conn.close()
