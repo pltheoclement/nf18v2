@@ -6,6 +6,7 @@ from afficher_animaux import *
 from ajouter_client import *
 from ajout_personnel import
 from ajout_medicament import *
+from afficher_medicament import *
 
 HOST = "tuxa.sme.utc"
 USER = "********"
@@ -58,6 +59,7 @@ while not sortir:
         statistiques_animaux(HOST, DATABASE, USER, PASSWORD)
     elif option == 4:
         print ("Statistiques des medicaments")
+        afficher_medicaments(HOST, DATABASE, USER, PASSWORD)
     elif option == 5:
         print ("Ajouter un client")
         ajout_client(HOST, DATABASE, USER, PASSWORD)
