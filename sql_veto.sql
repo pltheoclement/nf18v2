@@ -3,8 +3,8 @@ CREATE TABLE Espèces (
   PRIMARY KEY (nom)
 );
 
-CREATE 	TABLE Animaux (
-  DossierMed INTEGER,
+CREATE TABLE Animaux (
+  DossierMed SERIAL INTEGER,
   nom VARCHAR NOT NULL,
   dtNaiss DATE NOT NULL,
   numPuce INTEGER,
@@ -15,7 +15,7 @@ CREATE 	TABLE Animaux (
 );
 
 CREATE TABLE Clients (
-  id INTEGER,
+  id SERIAL INTEGER,
   nom VARCHAR NOT NULL,
   prenom VARCHAR NOT NULL,
   dtNaiss DATE NOT NULL,
@@ -25,7 +25,7 @@ CREATE TABLE Clients (
 );
 
 CREATE TABLE Personnel (
-  id INTEGER,
+  id SERIAL INTEGER,
   nom VARCHAR NOT NULL,
   prenom VARCHAR NOT NULL,
   dtNaiss DATE NOT NULL,
@@ -36,7 +36,7 @@ CREATE TABLE Personnel (
 );
 
 CREATE TABLE Médicaments (
-  id INTEGER,
+  id SERIAL INTEGER,
   molecule VARCHAR NOT NULL,
   effets VARCHAR NOT NULL,
   PRIMARY KEY (id)
@@ -60,7 +60,7 @@ CREATE TABLE Spécialité (
 
 
 CREATE TABLE Traitements (
-  id INTEGER,
+  id SERIAL INTEGER,
   dtDebut DATE NOT NULL,
   dtSaisie DATE NOT NULL,
   num_dossier INTEGER,
@@ -80,7 +80,7 @@ CREATE TABLE Resultats_analyse (
 );
 
 CREATE TABLE Consulter (
-  id INTEGER,
+  id SERIAL INTEGER,
   dateConsult DATE NOT NULL,
   observation VARCHAR,
   dtSaisie DATE NOT NULL,
@@ -92,7 +92,7 @@ CREATE TABLE Consulter (
 );
 
 CREATE TABLE Procedures (
-  id INTEGER,
+  id SERIAL INTEGER,
   description VARCHAR NOT NULL,
   dtSaisie DATE NOT NULL,
   num_dossier INTEGER,
