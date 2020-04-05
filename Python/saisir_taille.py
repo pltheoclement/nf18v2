@@ -16,6 +16,18 @@ def saisir_taille(HOST, DATABASE, USER, PASSWORD):
             erreur = True
         except:
             print ("Erreur, veuillez entrer un entier positif")
+   
+    ok = False
+    while (not ok):
+        sql = "SELECT DossierMed FROM animaux"
+        cur.execute(sql)
+        row = cur.fetchone()
+        while row:
+            if row[0] == numDossier:
+                ok = True
+            row = cur.fetchone()
+        if (not ok):
+            numDossier = int(input ("Erreur, veuillez entrer un numéro de dossier existant : "))
 
     erreur = False
     while (not erreur):
