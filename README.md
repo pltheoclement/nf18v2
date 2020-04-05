@@ -18,7 +18,7 @@ Le fichier **veto.plantuml** contient la représentation sous forme de diagramme
 
 Le fichier **MLD_veto.txt** contient la représention des données de l'exercice sous forme logique en reprenant le contenu du diagramme UML (MCD) précédent, mais précise en plus la volumétrie, la structure et l'organisation des données telles qu'elles pourront être implémentées.
 
-Le fichier **sql_veto_sql** contient la création de toutes les tables utiles à la base de données en requêtes SQL.
+Le fichier **sql_veto.sql** contient la création de toutes les tables utiles à la base de données en requêtes SQL.
 
 Le fichier **fichiers CSV** contient les documents avec les exemples de données insérées dans la base de données.
 
