@@ -11,9 +11,9 @@ def ajout_animal(HOST, DATABASE, USER, PASSWORD):
     erreur = False
     while (not erreur):
         try:
-            JNaiss = int(input("    Jour : "))
-            MNaiss = int(input("    Mois : "))
-            ANaiss = int(input("    Année : "))
+            JNaiss = int(input("    Jour (JJ) : "))
+            MNaiss = int(input("    Mois (MM) : "))
+            ANaiss = int(input("    Année (AAAA) : "))
             erreur = True
         except:
             print ("Erreur, veuillez entrer des entiers positifs")
