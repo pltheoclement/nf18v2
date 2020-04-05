@@ -41,7 +41,7 @@ while not sortir:
     print ("4. Ajouter un medicament")
     print ("5. Afficher la liste des Animaux")
     print ("6. Statistiques des Animaux traites")
-    print ("7. Statistiques des medicaments")
+    print ("7. Afficher la liste du personnel")
     print ("8. Saisir la taille d'un animal")
     print ("9. Supprimer personnel")
     print ("10. Saisir le poids d'un animal")
@@ -70,7 +70,8 @@ while not sortir:
         print ("Statistiques des animaux traites ")
         statistiques_animaux(HOST, DATABASE, USER, PASSWORD)
     elif option == 7:
-        print ("statistiques des medicaments")
+        print ("Afficher la liste du personnel (ordre alphabétique)")
+        afficher_personnel(HOST, DATABASE, USER, PASSWORD)
     elif option == 8:
         print ("Saisir la taille d'un animal")
         saisir_taille(HOST, DATABASE, USER, PASSWORD)
