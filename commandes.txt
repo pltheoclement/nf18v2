@@ -1,0 +1,33 @@
+Pour importer la base de données:
+
+    \i sql_veto.sql
+    
+Insérer les données dans le tableau espèces:
+
+     \copy espèces FROM 'especes.csv' WITH DELIMITER AS ';' CSV HEADER
+     
+Insérer les données dans le tableau personnel:
+
+    \copy personnel(nom, prenom, dtnaiss, adresse, tel, poste) FROM 'personnel.csv' WITH DELIMITER AS ';' CSV HEADER
+
+Insérer les données dans le tableau médicaments:
+
+    \copy médicaments(molecule, effets) FROM 'medicaments.csv' WITH DELIMITER AS ';' CSV HEADER
+    
+Insérer les données dans le tableau spécialité:
+
+    \copy spécialité FROM 'specialite.csv' WITH DELIMITER AS ';' CSV HEADER
+    
+Insérer les données dans le tableau animaux:
+    
+    \copy animaux(nom, dtnaiss, numpuce, numpasseport, espece) FROM 'animaux.csv' WITH DELIMITER AS ';' CSV HEADER
+    
+Insérer les données dans le tableau clients: 
+    
+    \copy clients(nom, prenom, dtnaiss, adresse, tel) FROM 'clients.csv' WITH DELIMITER AS ';' CSV HEADER
+    
+Insérer les données dans le tableau appartenir: 
+    
+    \copy appartenir FROM 'appartenir.csv' WITH DELIMITER AS ';' CSV HEADER
+
+
