@@ -4,7 +4,7 @@ import psycopg2
 from ajout_animal import *
 from afficher_animaux import *
 from ajout_client import *
-from ajout_personnel import
+from ajout_personnel import *
 from ajout_medicament import *
 from afficher_medicament import *
 from supprimer_personnel import*
