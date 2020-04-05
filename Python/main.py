@@ -64,7 +64,7 @@ while not sortir:
         print ("Ajouter un medicament")
         ajout_medicament(HOST, DATABASE, USER, PASSWORD)
     elif option == 5:
-        print ("Afficher la liste des animaux")
+        print ("Afficher la liste des animaux (ordre alphabétique)")
         afficher_animaux(HOST, DATABASE, USER, PASSWORD)
     elif option == 6:
         print ("Statistiques des animaux traites ")
