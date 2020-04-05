@@ -26,7 +26,7 @@ def ajout_personnel(HOST, DATABASE, USER, PASSWORD):
 
     tel = int(input("Telephone : "))
 
-    nposte = int(input("Quelle est ta poste? Tapez 1 pour Vétérinaire, 2 pour Assistant : "))
+    nposte = int(input("Quelle est son poste? Tapez 1 pour Vétérinaire, 2 pour Assistant : "))
 		
     if nposte == 1:
         poste = "vétérinaire"
@@ -35,7 +35,7 @@ def ajout_personnel(HOST, DATABASE, USER, PASSWORD):
 
 
     try:
-        sql = "INSERT INTO personnel VALUES ('%s','%s', '%i-%i-%i', '%s', %i, '%s')"% (nom, prenom, ANaiss, MNaiss, JNaiss, adresse, tel, poste)
+        sql = "INSERT INTO personnel (nom, prenom, dtNaiss, adresse, tel, poste) VALUES ('%s','%s', '%i-%i-%i', '%s', %i, '%s')"% (nom, prenom, ANaiss, MNaiss, JNaiss, adresse, tel, poste)
         cur.execute(sql)
         conn.commit()
     except psycopg2.Error as e:
