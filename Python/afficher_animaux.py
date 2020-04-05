@@ -59,6 +59,6 @@ def statistiques_animaux(HOST, DATABASE, USER, PASSWORD):
 		row = cur.fetchone()
 	
 
-	print("\n\nLe nombre total des animaux traités: % i \n - Felines : %i \n - Canides: %i \n - Reptile: %i \n - Rongeur: %i \n - Oiseau: %i \n - Autres: %i \n\n" % (c_total, int(c_feline),int(c_canide), int(c_reptile), int(c_rongeur), int(c_oiseau), int(c_autre)))
+	print("\n\nLe nombre total des animaux traités: % i \n - Felins : %i \n - Canides: %i \n - Reptile: %i \n - Rongeur: %i \n - Oiseau: %i \n - Autres: %i \n\n" % (c_total, int(c_feline),int(c_canide), int(c_reptile), int(c_rongeur), int(c_oiseau), int(c_autre)))
 
 	conn.close()
