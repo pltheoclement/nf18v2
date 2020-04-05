@@ -41,9 +41,9 @@ def saisir_taille(HOST, DATABASE, USER, PASSWORD):
     erreur = False
     while (not erreur):
         try:
-            JSaisie = int(input("    Jour : "))
-            MSaisie = int(input("    Mois : "))
-            ASaisie = int(input("    Année : "))
+            JSaisie = int(input("    Jour (JJ) : "))
+            MSaisie = int(input("    Mois (MM) : "))
+            ASaisie = int(input("    Année (AAAA) : "))
             erreur = True
         except:
             print ("Erreur, veuillez entrer des entiers positifs")
