@@ -3,7 +3,7 @@
 import psycopg2
 from ajout_animal import *
 from afficher_animaux import *
-from ajouter_client import *
+from ajout_client import *
 from ajout_personnel import
 from ajout_medicament import *
 from afficher_medicament import *
@@ -56,22 +56,21 @@ while not sortir:
         ajout_animal(HOST, DATABASE, USER, PASSWORD)
     elif option == 2:
         print ("Ajouter un client")
-        afficher_animaux(HOST, DATABASE, USER, PASSWORD)
+        ajout_client(HOST, DATABASE, USER, PASSWORD)
     elif option == 3:
         print ("Ajouter un personnel")
-        statistiques_animaux(HOST, DATABASE, USER, PASSWORD)
+        ajout_personnel(HOST, DATABASE, USER, PASSWORD)
     elif option == 4:
         print ("Ajouter un medicament")
-        afficher_medicaments(HOST, DATABASE, USER, PASSWORD)
+        ajout_medicaments(HOST, DATABASE, USER, PASSWORD)
     elif option == 5:
         print ("Afficher la liste des animaux")
-        ajout_client(HOST, DATABASE, USER, PASSWORD)
+        afficher_animaux(HOST, DATABASE, USER, PASSWORD)
     elif option == 6:
         print ("Statistiques des animaux traites ")
-        ajout_personnel(HOST, DATABASE, USER, PASSWORD)
+        statistiques_animaux(HOST, DATABASE, USER, PASSWORD)
     elif option == 7:
         print ("statistiques des medicaments")
-        ajout_medicament(HOST, DATABASE, USER, PASSWORD)
     elif option == 8:
         print ("Saisir la taille d'un animal")
         saisir_taille(HOST, DATABASE, USER, PASSWORD)
