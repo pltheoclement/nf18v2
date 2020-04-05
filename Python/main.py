@@ -62,7 +62,7 @@ while not sortir:
         ajout_personnel(HOST, DATABASE, USER, PASSWORD)
     elif option == 4:
         print ("Ajouter un medicament")
-        ajout_medicaments(HOST, DATABASE, USER, PASSWORD)
+        ajout_medicament(HOST, DATABASE, USER, PASSWORD)
     elif option == 5:
         print ("Afficher la liste des animaux")
         afficher_animaux(HOST, DATABASE, USER, PASSWORD)
