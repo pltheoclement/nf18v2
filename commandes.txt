@@ -2,6 +2,9 @@ Pour importer la base de données:
 
     \i sql_veto.sql
     
+
+Les commandes suivantes permettent d'ajouter des données dans certaines tables. Elles doivent être exécutées dans l'ordre.
+
 Insérer les données dans le tableau espèces:
 
      \copy espèces FROM 'especes.csv' WITH DELIMITER AS ';' CSV HEADER
